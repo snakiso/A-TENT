@@ -50,7 +50,9 @@ a {
 
 .menu {
   position: fixed;
+  overflow: auto;
   top: 0;
+  bottom: 0;
   min-height: 800px;
   width: 100%;
   background-color: rgb(246, 246, 246);
@@ -2527,7 +2529,7 @@ a {
   }
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 420px) {
   .info .wrapper {
     padding: 170px 20px;
   }
