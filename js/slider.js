@@ -15,17 +15,28 @@ const swiper1 = new Swiper('.solutions-slider', {
   prevEl: '.swiper-button-prev',
  },
  slidesPerView: 'auto',
- spaceBetween: 15,
+ centeredSlides: false,
+ spaceBetween: 50,
  autoWidth: false,
  autoHeight: true,
  freeMode: true,
+ breakpoints: {
+  768: {
+   slidesPerView: 'auto',
+   spaceBetween: 15,
+  }
+ }
 });
 
 var swiper2 = new Swiper(".show-slider", {
  direction: "vertical",
  slidesPerView: 1,
  spaceBetween: 30,
- mousewheel: false,
+ loop: true,
+ mousewheel: true,
+ speed: 1000,
+ effect: "slide",
+ parallax: true,
  pagination: {
   el: ".swiper-pagination",
   clickable: true,
@@ -40,4 +51,15 @@ var swiper3 = new Swiper(".clients-slider", {
   el: ".swiper-pagination",
   clickable: true,
  },
+ breakpoints: {
+  300: {
+   slidesPerView: 1,
+  },
+  768: {
+   slidesPerView: 2,
+  },
+  1300: {
+   slidesPerView: 4,
+  },
+ }
 });
