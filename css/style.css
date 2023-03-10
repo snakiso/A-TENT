@@ -2223,6 +2223,16 @@ a {
     font-size: 18px;
   }
 
+  .menu__left-block:hover,
+  .menu__solution:hover,
+  .menu__projects:hover,
+  .menu__contacts:hover,
+  .menu__gallery:hover,
+  .menu__a-tent:hover {
+    box-shadow: none;
+    border-radius: none;
+  }
+
   .info .wrapper {
     padding: 100px 20px;
   }
