@@ -15,7 +15,7 @@ const swiper1 = new Swiper('.solutions-slider', {
   prevEl: '.swiper-button-prev',
  },
  slidesPerView: 'auto',
- centeredSlides: false,
+ centeredSlides: true,
  spaceBetween: 50,
  autoWidth: false,
  autoHeight: true,
@@ -24,6 +24,7 @@ const swiper1 = new Swiper('.solutions-slider', {
   768: {
    slidesPerView: 'auto',
    spaceBetween: 15,
+   centeredSlides: false,
   }
  }
 });
