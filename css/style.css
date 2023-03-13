@@ -53,12 +53,17 @@ a {
   position: fixed;
   top: 0;
   min-height: 800px;
+  max-height: 1500px;
   width: 100%;
   background-color: rgb(246, 246, 246);
   background-image: url(../img/header/menu-bg.png);
   z-index: 100;
-  right: -100%;
+  top: -200%;
   transition: all 0.5s;
+}
+
+.menu__contacts-mobile {
+  display: none;
 }
 
 .menu__top {
@@ -1818,11 +1823,11 @@ a {
 
 @media screen and (max-width: 1300px) {
   .wrapper {
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
   .header__wrapper {
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
   .header__nav {
@@ -1851,7 +1856,7 @@ a {
   .show__sidebar {
     position: absolute;
     bottom: 25px;
-    right: 20px;
+    right: 15px;
   }
 
   .show__projects {
@@ -1862,7 +1867,8 @@ a {
     position: relative;
     height: 40px;
     font-size: 14px;
-    padding: 12px 20px;
+    padding: 12px 22px;
+    border-radius: 4px;
   }
 
   .show__box {
@@ -2077,6 +2083,21 @@ a {
     min-height: 100vh;
   }
 
+  .menu__contacts-mobile {
+    display: block;
+  }
+
+  .menu__contacts-box {
+    margin-top: 30px;
+  }
+
+  .menu__contacts-box a {
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
   .menu .mobile-arr {
     position: relative;
     width: 220px;
@@ -2089,10 +2110,10 @@ a {
   .menu .mobile-arr::after {
     position: absolute;
     content: "";
-    width: 15px;
-    height: 15px;
-    border-bottom: 3px solid #20C2FF;
-    border-right: 3px solid #20C2FF;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #20C2FF;
+    border-right: 2px solid #20C2FF;
     transform: rotate(45deg);
     transition: all 0.3s;
     right: -30px;
@@ -2127,7 +2148,17 @@ a {
 
   .menu .border {
     border: none;
+    position: relative;
     background: none;
+  }
+
+  .menu .border::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #D7D7D7;
+    bottom: 0;
   }
 
   .menu__subpoint {
@@ -2241,10 +2272,19 @@ a {
     display: none;
   }
 
+  .widget::before {
+    height: 2px;
+  }
+
+  .widget::after {
+    width: 2px;
+  }
+
   .widget {
     max-width: calc(100% - 30px);
     min-height: 250px;
     right: 10px;
+    border-radius: 0 30px 0 0;
   }
 
   .widget__title {
@@ -2259,6 +2299,22 @@ a {
 }
 
 @media screen and (max-width: 900px) {
+  .show .wrapper {
+    padding-top: 20px;
+  }
+
+  .show .description__content {
+    max-width: 250px;
+  }
+
+  .show .description__title {
+    font-size: 22px;
+  }
+
+  .show-slider {
+    height: 250px;
+  }
+
   .show-slider .swiper-slide {
     display: block;
   }
@@ -2270,9 +2326,43 @@ a {
   .show-slider .swiper-image-right {
     display: none;
   }
+
+  .show-slider .slide-content {
+    bottom: 15px;
+  }
+
+  .show-slider .swiper-slide-active .slide-content {
+    left: 15px;
+  }
+
+  .show-slider .slide-title {
+    font-size: 16px;
+    margin-bottom: 5px;
+    max-width: 200px;
+  }
+
+  .show-slider .slide-date {
+    font-size: 13px;
+  }
+
+  .show-slider .swiper-pagination {
+    right: 15px;
+    row-gap: 0;
+    bottom: 10px;
+  }
+
+  .show-slider .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .header__wrapper {
+    height: 70px;
+    padding: 0 15px;
+  }
+
   .header__search {
     display: none;
   }
@@ -2286,28 +2376,30 @@ a {
   }
 
   .header__burger-box {
-    width: 60px;
-    height: 60px;
+    width: 36px;
+    height: 34px;
   }
 
   .header__burger-line,
   .header__burger-line::after,
   .header__burger-line::before {
-    width: 30px;
+    width: 22px;
+    height: 2px;
   }
 
   .hero {
-    padding: 70px 0 120px 0;
+    padding: 45px 0 120px 0;
   }
 
   .hero__feedback {
-    width: 180px;
+    width: 160px;
     height: 40px;
-    font-size: 16px;
+    font-size: 14px;
+    margin-top: -7px;
   }
 
   .hero__subtitle {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .hero__title {
@@ -2315,19 +2407,46 @@ a {
   }
 
   .hero__text {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .products {
     background: none;
+    padding-top: 45px;
+  }
+
+  .products .wrapper {
+    padding: 0;
+  }
+
+  .products .description__link {
+    padding: 0 15px;
+  }
+
+  .products .description__content {
+    max-width: 250px;
+    padding: 0 15px;
   }
 
   .products .description__title {
     font-size: 22px;
+    line-height: 130%;
+  }
+
+  .products .solutions {
+    padding-bottom: 45px;
   }
 
   .products .solutions-slider .swiper-slide {
     max-width: none;
+  }
+
+  .products .solutions-slider .slide-title {
+    font-size: 16px;
+  }
+
+  .products .solutions-slider .slide-text {
+    font-size: 14px;
   }
 
   .products .solutions-slider .slider-img {
@@ -2349,12 +2468,21 @@ a {
     font-size: 16px;
   }
 
+  .clients {
+    padding: 45px 0 80px 0;
+  }
+
   .clients__title {
     font-family: "Play", sans-serif;
     font-size: 22px;
     max-width: 400px;
     line-height: 25px;
-    font-weight: 400;
+    font-weight: 700;
+  }
+
+  .clients-slider .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
   }
 
   .about__a-tent img {
@@ -2475,7 +2603,7 @@ a {
 
   .exp .wrapper {
     justify-content: center;
-    padding: 50px 20px;
+    padding: 40px 20px;
   }
 
   .exp__decor {
@@ -2494,23 +2622,27 @@ a {
   }
 
   .exp__right-block {
-    padding-top: 200px;
+    padding-top: 190px;
+    row-gap: 5px;
   }
 
   .exp__number {
     font-size: 38px;
+    letter-spacing: 0.06em;
   }
 
   .exp__text {
     font-size: 14px;
+    text-transform: uppercase;
   }
 
   .exp__inner-box {
-    padding: 20px 50px;
+    padding: 20px 30px 20px 80px;
   }
 
   .footer .wrapper {
-    row-gap: 30px;
+    row-gap: 15px;
+    padding: 25px 15px;
   }
 
   .footer__designs-block {
@@ -2518,14 +2650,20 @@ a {
   }
 
   .footer__title {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     line-height: 24px;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .footer__nav-bottom {
     flex-direction: column;
     margin: 0;
+  }
+
+  .footer__solutions {
+    display: block !important;
+    color: white !important;
+    margin-top: 0;
   }
 
   .footer__projects a:not(:first-child),
@@ -2537,11 +2675,12 @@ a {
   .footer__projects a,
   .footer__gallery a,
   .footer__a-tent a {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 
   .footer__contacts {
     position: relative;
+    padding-bottom: 80px;
   }
 
   .footer__contacts img {
@@ -2554,11 +2693,12 @@ a {
     width: 80%;
     height: 2px;
     background-color: rgba(255, 255, 255, 0.45);
-    bottom: 45px;
+    bottom: 75px;
   }
 
   .footer__contacts-item {
-    font-size: 16px;
+    font-size: 14px;
+    padding-bottom: 10px;
   }
 
   .footer__contacts-secondary {
@@ -2568,6 +2708,24 @@ a {
   .footer__politics {
     flex-direction: column;
     row-gap: 10px;
+    font-size: 13px;
+  }
+
+  .footer__politics a img {
+    width: 7px;
+  }
+
+  .description__link {
+    font-size: 14px;
+  }
+
+  .description__title {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+  }
+
+  .cards__box {
+    row-gap: 15px;
   }
 
   .card {
@@ -2584,6 +2742,7 @@ a {
 
   .card__content {
     padding: 16px;
+    border-top: 4px solid #20C2FF;
   }
 
   .card__title,
@@ -2598,16 +2757,49 @@ a {
     width: -moz-fit-content;
     width: fit-content;
     font-weight: 600;
+    font-size: 14px;
   }
 
   .card__link:after {
-    right: -30px;
+    right: -50px;
+    top: -1px;
+  }
+
+  .slider-bottom {
+    padding: 0 15px;
+  }
+
+  .slider-nav {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+
+  .swiper-button-prev {
+    left: 0;
+    top: 23px;
+  }
+
+  .swiper-button-next {
+    right: 0;
+    top: 23px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .contacts {
-    min-height: 560px;
+    min-height: 490px;
+  }
+
+  .contacts__inner-box {
+    padding-top: 25px;
+  }
+
+  .contacts__item {
+    font-size: 14px;
+  }
+
+  .contacts__item img {
+    width: 28px;
   }
 
   .contacts__block {
@@ -2625,9 +2817,9 @@ a {
   }
 
   .contacts__feedback-block {
-    width: 95%;
-    bottom: -47%;
-    min-height: 220px;
+    width: 98%;
+    bottom: -25%;
+    min-height: 210px;
     background-image: url(../img/main/contacts-bg-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -2655,10 +2847,12 @@ a {
 
 @media screen and (max-width: 460px) {
   .exp__decor {
-    padding-left: 30%;
-    height: 120px;
-    top: 25%;
-    width: 80%;
+    padding-left: 28%;
+    height: 175px;
+    top: 19%;
+    width: 94%;
+    border-right: 4px solid #20c2ff;
+    border-top: 4px solid #20c2ff;
   }
 }
 

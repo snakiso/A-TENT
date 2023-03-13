@@ -14,13 +14,13 @@ function Scroll() {
 burger.addEventListener('click', () => {
   menu.classList.add('open')
   Scroll()
-  menu.style.right = '0%'
+  menu.style.top = '0%'
 })
 
 close.addEventListener('click', () => {
   menu.classList.remove('open')
   Scroll()
-  menu.style.right = '-200%'
+  menu.style.top = '-200%'
 })
 
 let mobileBtn = document.querySelectorAll('.mobile-btn');
