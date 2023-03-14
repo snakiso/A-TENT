@@ -49,6 +49,92 @@ a {
   color: white;
 }
 
+.btn-hover {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.btn-hover::before {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(-45deg);
+  right: -10px;
+  transition: all 0.4s;
+}
+
+.btn-hover:hover {
+  width: 220px;
+}
+
+.btn-hover:hover:before {
+  right: 25px;
+}
+
+.tr-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.tr-delay-4 {
+  transition-delay: 0.4s;
+}
+
+.tr-delay-6 {
+  transition-delay: 0.6s;
+}
+
+.tr-delay-6 {
+  transition-delay: 0.8s;
+}
+
+.card-up {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.7s;
+}
+
+.card-up.animated {
+  transform: none;
+  opacity: 1;
+}
+
+.fade-left {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 0.7s;
+}
+
+.fade-right {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.7s;
+}
+
+.fade-down {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.7s;
+}
+
+.fade-left.animated {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.fade-right.animated {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.fade-down.animated {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
 .menu {
   position: fixed;
   top: 0;
@@ -260,7 +346,7 @@ a {
 }
 
 .header__wrapper {
-  max-width: 1900px;
+  max-width: 1600px;
   height: 120px;
   margin: auto;
   display: flex;
@@ -470,7 +556,7 @@ a {
 }
 
 .hero {
-  padding: 120px 0 150px 0;
+  padding: 75px 0 150px 0;
   background-image: url(../img/main/hero.png);
   background-repeat: no-repeat;
   background-position: center 0;
@@ -487,26 +573,27 @@ a {
   font-size: 90px;
   font-weight: 700;
   letter-spacing: 0.08em;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .hero__text {
   font-size: 22px;
   font-weight: 500;
   max-width: 900px;
+  margin-top: 10px;
 }
 
 .hero__feedback {
   display: flex;
-  justify-content: center;
+  padding-left: 32px;
   align-items: center;
-  width: 250px;
+  width: 200px;
   height: 60px;
   background-color: #20C2FF;
   border-radius: 40px;
   font-size: 16px;
   font-weight: 600;
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
 .info {
@@ -514,7 +601,7 @@ a {
 }
 
 .info .wrapper {
-  padding: 50px 20px;
+  padding: 20px 20px;
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
@@ -552,6 +639,12 @@ a {
   font-size: 18px;
   font-weight: 600;
   width: 100%;
+  transition: all 0.2s;
+}
+
+.info__link:hover {
+  -moz-column-gap: 15px;
+       column-gap: 15px;
 }
 
 .info__link::before {
@@ -565,18 +658,18 @@ a {
 
 .widget {
   position: absolute;
-  max-width: 550px;
-  min-height: 500px;
+  max-width: 470px;
+  min-height: 475px;
   background: rgba(255, 255, 255, 0.46);
   -webkit-backdrop-filter: blur(24px);
           backdrop-filter: blur(24px);
   bottom: 0;
-  right: -8%;
+  right: -7%;
   border-radius: 0 70px 0 0;
 }
 
 .widget__inner-box {
-  padding: 24px 10px 20px 24px;
+  padding: 24px 10px 20px 20px;
 }
 
 .widget__title {
@@ -589,13 +682,13 @@ a {
 .widget__list {
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
   row-gap: 25px;
 }
 
 .widget__item {
-  padding: 20px 30px;
+  padding: 12px 20px;
   font-size: 14px;
   font-weight: 500;
   color: black;
@@ -942,6 +1035,11 @@ a {
   align-items: center;
 }
 
+.clients-slider .swiper-slide:hover {
+  border: none;
+  box-shadow: 6px 11px 25px rgba(40, 55, 85, 0.18);
+}
+
 .clients-slider .swiper-pagination {
   display: flex;
   position: relative;
@@ -1142,8 +1240,7 @@ a {
 
 .exp__decor {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 28%;
   width: 45%;
   height: 380px;
   background: linear-gradient(269.85deg, rgba(255, 255, 255, 0.92) 34.3%, rgba(255, 255, 255, 0) 136.47%);
@@ -1226,7 +1323,7 @@ a {
   background-repeat: no-repeat;
   background-position: 0 center;
   background-size: cover;
-  z-index: 2;
+  z-index: 0;
 }
 
 .contacts__block {
@@ -1530,19 +1627,20 @@ a {
   display: flex;
   flex-wrap: wrap;
   row-gap: 60px;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
+  justify-content: space-between;
 }
 
 .card {
-  max-width: 415px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s;
 }
 
 .card__img img {
   display: block;
-  width: 100%;
+  width: 400px;
+  height: 420px;
 }
 
 .card__content {
@@ -1569,6 +1667,7 @@ a {
   color: rgb(62, 65, 69);
   min-height: 170px;
   padding-bottom: 60px;
+  margin-top: 14px;
 }
 
 .card__link {
@@ -1586,6 +1685,10 @@ a {
   height: 18px;
   right: -25px;
   top: 2px;
+}
+
+.card:hover {
+  box-shadow: 8px 8px 11px rgba(40, 55, 85, 0.17);
 }
 
 .decor-card {
@@ -1964,7 +2067,7 @@ a {
   .exp__decor {
     padding-left: 38%;
     height: 260px;
-    top: 25%;
+    top: 8%;
     width: 75%;
   }
 
@@ -2019,6 +2122,9 @@ a {
   .contacts__feedback-block {
     border-radius: 40px 0 0 0;
     min-height: 260px;
+    background-image: url(../img/main/contacts-bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .contacts__feedback-title {
@@ -2392,6 +2498,8 @@ a {
   }
 
   .hero__feedback {
+    padding: 0;
+    justify-content: center;
     width: 160px;
     height: 40px;
     font-size: 14px;
@@ -2607,10 +2715,10 @@ a {
   }
 
   .exp__decor {
-    padding-left: 30%;
-    height: 120px;
-    top: 25%;
-    width: 65%;
+    padding-left: 40%;
+    height: 200px;
+    top: 8%;
+    width: 80%;
   }
 
   .exp__title {
@@ -2622,7 +2730,7 @@ a {
   }
 
   .exp__right-block {
-    padding-top: 190px;
+    padding-top: 270px;
     row-gap: 5px;
   }
 

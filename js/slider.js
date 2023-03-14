@@ -47,6 +47,11 @@ var swiper2 = new Swiper(".show-slider", {
 var swiper3 = new Swiper(".clients-slider", {
  slidesPerView: 4,
  spaceBetween: 18,
+ loop: true,
+ autoplay: {
+  delay: 3000,
+ },
+ speed: 4000,
  autoWidth: false,
  pagination: {
   el: ".swiper-pagination",

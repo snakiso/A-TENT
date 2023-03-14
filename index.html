@@ -6,19 +6,21 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap&_v=20230313114700" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap&_v=20230314110337" rel="stylesheet">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap&_v=20230313114700" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap&_v=20230314110337" rel="stylesheet">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap&_v=20230313114700" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap&_v=20230314110337" rel="stylesheet">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap&_v=20230313114700" rel="stylesheet">
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230313114700" />
- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230313114700"></script>
- <link rel="stylesheet" href="css/style.min.css?_v=20230313114700">
+ <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap&_v=20230314110337" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230314110337" />
+ <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230314110337"></script>
+ <script src="/js/jQuery2.2.0.js?_v=20230314110337"></script>
+ <script src="/js/ScrollAnimations.js?_v=20230314110337"></script>
+ <link rel="stylesheet" href="css/style.min.css?_v=20230314110337">
  <title>Главная</title>
 </head>
 
@@ -233,7 +235,7 @@
   <span class="hero__title ff-play">ПРОСТРАНСТВA</span>
   <p class="hero__text">А-ТЕНТ предоставляет в аренду первоклассные временные быстровозводимые павильоны для проведения различных
    мероприятий.</p>
-   <a href="#" class="hero__feedback">Связаться с нами</a>
+   <a href="#" class="hero__feedback btn-hover">Связаться с нами</a>
  </div>
 </section>
     <section class="info">
@@ -265,159 +267,163 @@
  </div>
 </section>
     <section class="products">
- <div class="wrapper">
-  <a href="#" class="description__link">Оборудование А-ТЕНТ</a>
-  <div class="description__box">
-   <div class="description__content">
-    <h2 class="description__title">Временные быстровозводимые павильоны и конструкции</h2>
-   </div>
+  <div class="wrapper">
+    <a href="#" class="description__link">Оборудование А-ТЕНТ</a>
+    <div class="description__box">
+      <div class="description__content">
+        <h2 class="description__title">Временные быстровозводимые павильоны и конструкции</h2>
+      </div>
+    </div>
+    <div class="cards__box">
+      <a href="#" class="card card-up" data-animation-container>
+        <div class="card__img">
+          <img src="img/cards/photo.png" alt="">
+        </div>
+        <div class="card__content">
+          <h3 class="card__title">Премиальные павильоны</h3>
+          <p class="card__text"> Мы являемся лидирующей компанией по предоставлению в аренду премиальных
+            павильонов серии MANHATTAN в России</p>
+          <span class="card__link">Премиальные решения</span>
+        </div>
+      </a>
+      <a href="#" class="card card-up" data-animation-container data-animation-delay=".2s">
+        <div class="card__img">
+          <img src="img/cards/photo-1.png" alt="">
+        </div>
+        <div class="card__content">
+          <h3 class="card__title">КЛАССИЧЕСКИЕ конструкции</h3>
+          <p class="card__text">Большой и современный парк аренды быстровозводимых временных конструкций шириной от 3м
+            до 40м
+            позволяет создать
+            пространство для проведения любого Event мероприятия</p>
+          <span class="card__link">Классические решения</span>
+        </div>
+      </a>
+      <a href="#" class="card card-up" data-animation-container data-animation-delay=".4s">
+        <div class="card__img">
+          <img src="img/cards/photo-2.png" alt="">
+        </div>
+        <div class="card__content">
+          <h3 class="card__title margin-0">ДОПОЛНИТЕЛЬНЫЕ опции
+            и оборудование</h3>
+          <p class="card__text">Большой и современный парк аренды быстровозводимых временных конструкций шириной от 3м
+            до 40м
+            позволяет создать
+            пространство для проведения любого Event мероприятия. </p>
+          <span class="card__link">Дополнительные решения</span>
+        </div>
+      </a>
+    </div>
+    <a href="#" class="description__link">Сферы применения</a>
+    <div class="description__box">
+      <div class="description__content">
+        <h2 class="description__title">Решения А-ТЕНТ</h2>
+      </div>
+    </div>
+    <div class="solutions">
+      <div class="solutions-slider">
+        <div class="swiper-wrapper">
+          <a href="#" class="swiper-slide">
+            <div class="slider-img">
+              <img src="img/main/hero.png" alt="" class="slider-img">
+            </div>
+            <div class="slide-info">
+              <div class="slide-inner-box">
+                <span class="slide-title ff-play">Форумы и выставки</span>
+                <p class="slide-text">Клиентские зоны гостеприимства и выставочное пространство для коммерческих
+                  мероприятий </p>
+                <span class="slide-link">Далее <img src="img/main/arrow.png" alt=""></span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="swiper-slide">
+            <div class="slider-img">
+              <img src="img/main/slider-img.png" alt="">
+            </div>
+            <div class="slide-info">
+              <div class="slide-inner-box">
+                <span class="slide-title ff-play">Event мероприятия</span>
+                <p class="slide-text">Мы предложим Вам первоклассные решения по организации пространства</p>
+                <span class="slide-link">Далее <img src="img/main/arrow.png" alt=""></span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="swiper-slide">
+            <div class="slider-img">
+              <img src="img/main/slider-img.png" alt="">
+            </div>
+            <div class="slide-info">
+              <div class="slide-inner-box">
+                <span class="slide-title ff-play">Зоны гостеприимства</span>
+                <p class="slide-text">Кировой уровень и качество наших павильонов для ваших VIP гостей</p>
+                <span class="slide-link">Далее <img src="img/main/arrow.png" alt=""></span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="swiper-slide">
+            <div class="slider-img">
+              <img src="img/main/slider-img.png" alt="">
+            </div>
+            <div class="slide-info">
+              <div class="slide-inner-box">
+                <span class="slide-title ff-play">Фестивали</span>
+                <p class="slide-text">Наш большой парк оборудования позволяет подготовить пространства для самых
+                  грандиозных
+                  фестивалей</p>
+                <span class="slide-link">Далее <img src="img/main/arrow.png" alt=""></span>
+              </div>
+            </div>
+          </a>
+          <a href='#' class="swiper-slide">
+            <div class="slider-img">
+              <img src="img/main/slider-img.png" alt="">
+            </div>
+            <div class="slide-info">
+              <div class="slide-inner-box">
+                <span class="slide-title ff-play">Тест драйвы и презентации</span>
+                <p class="slide-text">Гостевые павильоны и зоны презентаций ведущих мировых автопроизводителей</p>
+                <span class="slide-link">Далее <img src="img/main/arrow.png" alt=""></span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="swiper-slide">
+            <div class="slider-img">
+              <img src="img/main/slider-img.png" alt="">
+            </div>
+            <div class="slide-info">
+              <div class="slide-inner-box">
+                <span class="slide-title ff-play">Форумы и выставки</span>
+                <p class="slide-text">Клиентские зоны гостеприимства и выставочное пространство для коммерческих
+                  мероприятий</p>
+                <span class="slide-link">Далее <img src="img/main/arrow.png" alt=""></span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="swiper-slide">
+            <div class="slider-img">
+              <img src="img/main/slider-img.png" alt="">
+            </div>
+            <div class="slide-info">
+              <div class="slide-inner-box">
+                <span class="slide-title ff-play">Фестивали</span>
+                <p class="slide-text">Наш большой парк оборудования позволяет подготовить пространства для самых
+                  грандиозных
+                  фестивалей</p>
+                <span class="slide-link">Далее <img src="img/main/arrow.png" alt=""></span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="slider-bottom">
+          <div class="slider-nav">
+            <div class="swiper-button-prev"><img src="img/slider/slider-arrow.png" alt=""></div>
+            <div class="swiper-button-next"><img src="img/slider/slider-arrow.png" alt=""></div>
+          </div>
+          <a href="#" class="slider-all-projects btn-hover">Все сферы</a>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="cards__box">
-   <a href="#" class="card">
-    <div class="card__img">
-     <img src="img/cards/photo.png" alt="">
-    </div>
-    <div class="card__content">
-     <h3 class="card__title">Премиальные павильоны</h3>
-     <p class="card__text"> Мы являемся лидирующей компанией по предоставлению в аренду премиальных
-      павильонов серии MANHATTAN в России</p>
-     <span class="card__link">Премиальные решения</span>
-    </div>
-   </a>
-   <a href="#" class="card">
-    <div class="card__img">
-     <img src="img/cards/photo-1.png" alt="">
-    </div>
-    <div class="card__content">
-     <h3 class="card__title">КЛАССИЧЕСКИЕ конструкции</h3>
-     <p class="card__text">Большой и современный парк аренды быстровозводимых временных конструкций шириной от 3м до 40м
-      позволяет создать
-      пространство для проведения любого Event мероприятия</p>
-     <span class="card__link">Классические решения</span>
-    </div>
-   </a>
-   <a href="#" class="card">
-    <div class="card__img">
-      <img src="img/cards/photo-2.png" alt="">
-    </div>
-    <div class="card__content">
-     <h3 class="card__title margin-0">ДОПОЛНИТЕЛЬНЫЕ опции
-      и оборудование</h3>
-     <p class="card__text">Большой и современный парк аренды быстровозводимых временных конструкций шириной от 3м до 40м
-      позволяет создать
-      пространство для проведения любого Event мероприятия. </p>
-     <span class="card__link">Дополнительные решения</span>
-    </div>
-   </a>
-  </div>
-  <a href="#" class="description__link">Сферы применения</a>
-  <div class="description__box">
-   <div class="description__content">
-    <h2 class="description__title">Решения А-ТЕНТ</h2>
-   </div>
-  </div>
-  <div class="solutions">
-   <div class="solutions-slider">
-    <div class="swiper-wrapper">
-     <a href="#" class="swiper-slide">
-      <div class="slider-img">
-       <img src="img/main/hero.png" alt="" class="slider-img">
-      </div>
-      <div class="slide-info">
-       <div class="slide-inner-box">
-        <span class="slide-title ff-play">Форумы и выставки</span>
-        <p class="slide-text">Клиентские зоны гостеприимства и выставочное пространство для коммерческих
-         мероприятий </p>
-        <span class="slide-link">Далее <img src="img/main/arrow.png" alt=""></span>
-       </div>
-      </div>
-     </a>
-     <a href="#" class="swiper-slide">
-      <div class="slider-img">
-       <img src="img/main/slider-img.png" alt="">
-      </div>
-      <div class="slide-info">
-       <div class="slide-inner-box">
-        <span class="slide-title ff-play">Event мероприятия</span>
-        <p class="slide-text">Мы предложим Вам первоклассные решения по организации пространства</p>
-        <span class="slide-link">Далее <img src="img/main/arrow.png" alt=""></span>
-       </div>
-      </div>
-     </a>
-     <a href="#" class="swiper-slide">
-      <div class="slider-img">
-       <img src="img/main/slider-img.png" alt="">
-      </div>
-      <div class="slide-info">
-       <div class="slide-inner-box">
-        <span class="slide-title ff-play">Зоны гостеприимства</span>
-        <p class="slide-text">Кировой уровень и качество наших павильонов для ваших VIP гостей</p>
-        <span class="slide-link">Далее <img src="img/main/arrow.png" alt=""></span>
-       </div>
-      </div>
-     </a>
-     <a href="#" class="swiper-slide">
-      <div class="slider-img">
-       <img src="img/main/slider-img.png" alt="">
-      </div>
-      <div class="slide-info">
-       <div class="slide-inner-box">
-        <span class="slide-title ff-play">Фестивали</span>
-        <p class="slide-text">Наш большой парк оборудования позволяет подготовить пространства для самых грандиозных
-         фестивалей</p>
-        <span class="slide-link">Далее <img src="img/main/arrow.png" alt=""></span>
-       </div>
-      </div>
-     </a>
-     <a href='#' class="swiper-slide">
-      <div class="slider-img">
-       <img src="img/main/slider-img.png" alt="">
-      </div>
-      <div class="slide-info">
-       <div class="slide-inner-box">
-        <span class="slide-title ff-play">Тест драйвы и презентации</span>
-        <p class="slide-text">Гостевые павильоны и зоны презентаций ведущих мировых автопроизводителей</p>
-        <span class="slide-link">Далее <img src="img/main/arrow.png" alt=""></span>
-       </div>
-      </div>
-     </a>
-     <a href="#" class="swiper-slide">
-      <div class="slider-img">
-       <img src="img/main/slider-img.png" alt="">
-      </div>
-      <div class="slide-info">
-       <div class="slide-inner-box">
-        <span class="slide-title ff-play">Форумы и выставки</span>
-        <p class="slide-text">Клиентские зоны гостеприимства и выставочное пространство для коммерческих
-         мероприятий</p>
-        <span class="slide-link">Далее <img src="img/main/arrow.png" alt=""></span>
-       </div>
-      </div>
-     </a>
-     <a href="#" class="swiper-slide">
-      <div class="slider-img">
-       <img src="img/main/slider-img.png" alt="">
-      </div>
-      <div class="slide-info">
-       <div class="slide-inner-box">
-        <span class="slide-title ff-play">Фестивали</span>
-        <p class="slide-text">Наш большой парк оборудования позволяет подготовить пространства для самых грандиозных
-         фестивалей</p>
-        <span class="slide-link">Далее <img src="img/main/arrow.png" alt=""></span>
-       </div>
-      </div>
-     </a>
-    </div>
-    <div class="slider-bottom">
-     <div class="slider-nav">
-      <div class="swiper-button-prev"><img src="img/slider/slider-arrow.png" alt=""></div>
-      <div class="swiper-button-next"><img src="img/slider/slider-arrow.png" alt=""></div>
-     </div>
-     <a href="#" class="slider-all-projects">Все сферы</a>
-    </div>
-   </div>
-  </div>
- </div>
 </section>
     <section class="show">
   <div class="wrapper">
@@ -517,13 +523,13 @@
 </section>
     <section class="about">
   <div class="director">
-    <div class="director__decor"></div>
+    <div class="director__decor fade-left" data-animation-container></div>
     <div class="wrapper">
       <div class="director__info">
-        <div class="director__photo">
+        <div class="director__photo fade-left" data-animation-container data-animation-delay=".5s">
           <img src="img/main/director.png" alt="">
         </div>
-        <div class="director__quote">
+        <div class="director__quote fade-right" data-animation-container data-animation-delay=".8s">
           <div class="director__quote-text ff-play">
             Это сложные задачи, которые действительно заставляют наши сердца биться чаще
           </div>
@@ -532,7 +538,7 @@
           </span>
         </div>
       </div>
-      <div class="director__more">
+      <div class="director__more fade-down" data-animation-container>
         <div class="director__left-block">
           <div class="director__text">
             Проработав в компании почти 20 лет, генеральный директор Дмитрий Демин по-прежнему
@@ -552,7 +558,7 @@
       </div>
     </div>
   </div>
-  <div class="about__a-tent">
+  <div class="about__a-tent fade-down" data-animation-container data-animation-start>
     <div class="wrapper">
       <img src="img/main/about-logo.png" alt="">
       <div class="about__content">
@@ -577,26 +583,26 @@
   </div>
 </section>
     <section class="exp">
- <div class="exp__decor">
+ <div class="exp__decor fade-left" data-animation-container data-animation-start>
    <span class="exp__title ff-work-sans">17 лет</span>
    <span class="exp__subtitle">опыт работы</span>
    <span class="exp__subtitle">в индустрии</span>
  </div>
  <div class="wrapper">
-  <div class="exp__right-block">
-   <div class="exp__item">
+  <div class="exp__right-block" data-animation-container>
+   <div class="exp__item fade-right" data-animation-child data-animation-delay=".2s">
     <div class="exp__inner-box">
      <span class="exp__number ff-play ">1200+</span>
      <span class="exp__text">Сотрудников в штате</span>
     </div>
    </div>
-   <div class="exp__item">
+   <div class="exp__item fade-right" data-animation-child data-animation-delay=".4s">
     <div class="exp__inner-box">
      <span class="exp__number ff-play ">180+</span>
      <span class="exp__text">Реализованных проектов</span>
     </div>
    </div>
-   <div class="exp__item">
+   <div class="exp__item fade-right" data-animation-child data-animation-delay=".6s">
     <div class="exp__inner-box">
      <span class="exp__number ff-play ">65</span>
      <span class="exp__text">Городов, где мы работаем</span>
@@ -605,20 +611,23 @@
   </div>
  </div>
 </section>
-    <section class="contacts">
+    <section class="contacts" data-animation-container>
  <div class="contacts__bg"></div>
  <div class="contacts__block">
-  <div class="contacts__block-bg"></div>
-  <div class="wrapper">
-   <div class="contacts__inner-box">
-    <a href="tel:+74955029900" class="contacts__item"><img src="img/main/Phone_white.svg" alt="">+7 (495) 502-99-00</a>
-    <a href="mailto:tent@tent.ru" class="contacts__item"><img src="img/main/Mail.svg" alt="">tent@tent.ru</a>
-    <a href="#" class="contacts__item"><img src="img/main/geo.svg" alt="">Москва, ул. Бибиревская 4</a>
-    <a href="#" class="contacts__item"><img src="img/main/Telegram_white.svg" alt="">Telegram</a>
-    <a href="#" class="contacts__item"><img src="img/main/whatsapp.svg" alt="">Whats App</a>
+  <div class="contacts__box fade-left" data-animation-child>
+   <div class="contacts__block-bg"></div>
+   <div class="wrapper" data-animation-child>
+    <div class="contacts__inner-box">
+     <a href="tel:+74955029900" class="contacts__item"><img src="img/main/Phone_white.svg" alt="">+7 (495)
+      502-99-00</a>
+     <a href="mailto:tent@tent.ru" class="contacts__item"><img src="img/main/Mail.svg" alt="">tent@tent.ru</a>
+     <a href="#" class="contacts__item"><img src="img/main/geo.svg" alt="">Москва, ул. Бибиревская 4</a>
+     <a href="#" class="contacts__item"><img src="img/main/Telegram_white.svg" alt="">Telegram</a>
+     <a href="#" class="contacts__item"><img src="img/main/whatsapp.svg" alt="">Whats App</a>
+    </div>
    </div>
   </div>
-  <div class="contacts__feedback-block">
+  <div class="contacts__feedback-block fade-right" data-animation-child>
    <div class="contacts__feedback-content">
     <span class="contacts__feedback-title">Заинтересовали наши решения?</span>
     <span class="contacts__feedback-subtitle">Напишите нам и мы ответим на все вопросы</span>
@@ -696,7 +705,7 @@
  </div>
 </footer>
 </body>
-<script src="./js/menu.js?_v=20230313114700"></script>
-<script src="./js/slider.js?_v=20230313114700"></script>
-
+<script src="./js/menu.js?_v=20230314110337"></script>
+<script src="./js/slider.js?_v=20230314110337"></script>
+<script src="./js/animation.js?_v=20230314110337"></script>
 </html>
