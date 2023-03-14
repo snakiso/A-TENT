@@ -2971,7 +2971,7 @@ a {
   }
 }
 
-@media screen and (max-width: 589px) {
+@media screen and (max-width: 555px) {
   .info .wrapper {
     padding: 140px 20px;
   }
@@ -2988,14 +2988,20 @@ a {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 393px) {
   .info .wrapper {
     padding: 170px 20px;
   }
 }
 
-@media screen and (max-width: 368px) {
+@media screen and (max-width: 349px) {
   .info .wrapper {
-    padding: 240px 20px;
+    padding: 200px 20px;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .info .wrapper {
+    padding: 230px 20px;
   }
 }
