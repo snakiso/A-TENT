@@ -1391,6 +1391,7 @@ a {
 }
 
 .contacts__feedback-link {
+  overflow: hidden;
   background-color: #20C2FF;
   border-radius: 40px;
   padding: 16px 28px;
@@ -1398,6 +1399,29 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 40px;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.contacts__feedback-link::before {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(-45deg);
+  right: -10px;
+  top: 20px;
+  transition: all 0.4s;
+}
+
+.contacts__feedback-link:hover {
+  padding: 16px 48px 16px 28px;
+}
+
+.contacts__feedback-link:hover:before {
+  right: 25px;
 }
 
 .footer {
