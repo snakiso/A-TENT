@@ -49,6 +49,42 @@ a {
   color: white;
 }
 
+.cookies {
+  width: 100%;
+  height: 55px;
+  background-color: #20C2FF;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+}
+
+.cookies .wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cookies__text {
+  font-size: 14px;
+  color: white;
+}
+
+.cookies__accept {
+  border: none;
+  border-radius: 40px;
+  width: 100px;
+  height: 35px;
+  outline: none;
+  background-color: rgb(0, 143, 224);
+  color: white;
+  cursor: pointer;
+}
+
+.cookies.accepted {
+  display: none;
+}
+
 .btn-hover {
   position: relative;
   overflow: hidden;
@@ -2656,6 +2692,27 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .cookies {
+    height: 130px;
+  }
+
+  .cookies__text {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .cookies__accept {
+    width: 90px;
+    font-size: 12px;
+    height: 30px;
+  }
+
+  .cookies .wrapper {
+    flex-direction: column;
+    padding: 15px;
+  }
+
   .header__wrapper {
     height: 70px;
     padding: 0 15px;
@@ -2789,14 +2846,14 @@ a {
     content: "";
     width: 10px;
     height: 20px;
-    left: 1px;
+    left: 2px;
     top: 50%;
     background: url(../img/main/mobile-arrow.png);
     background-repeat: repeat;
   }
 
   .products .solutions-slider::after {
-    right: 1px;
+    right: 2px;
     left: auto;
     transform: rotate(180deg);
   }
@@ -2823,14 +2880,14 @@ a {
     content: "";
     width: 10px;
     height: 20px;
-    left: 1px;
+    left: 2px;
     top: 65%;
     background: url(../img/main/mobile-arrow.png);
     background-repeat: repeat;
   }
 
   .clients-slider::after {
-    right: 1px;
+    right: 2px;
     left: auto;
     transform: rotate(180deg);
   }
