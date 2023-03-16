@@ -997,15 +997,6 @@ a {
   position: relative;
 }
 
-.show-slider .slide-left-block::after {
-  height: 100%;
-  position: absolute;
-  width: 7px;
-  content: "";
-  right: 0;
-  background: #20C2FF;
-}
-
 .show-slider .slide-content {
   position: absolute;
   bottom: 20px;
@@ -1093,6 +1084,16 @@ a {
   height: 100%;
   background-color: hsla(0deg, 0%, 0%, 0.2);
   background-blend-mode: overlay;
+}
+
+.show-slider::before {
+  height: 100%;
+  position: absolute;
+  width: 4px;
+  content: "";
+  left: 50%;
+  z-index: 2;
+  background: #20C2FF;
 }
 
 .clients {
@@ -2688,6 +2689,11 @@ a {
   .show-slider .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
+    border: 1px solid #20C2FF;
+  }
+
+  .show-slider::before {
+    display: none;
   }
 }
 
