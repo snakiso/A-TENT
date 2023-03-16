@@ -14,7 +14,7 @@
          * @type {{offset: number}}
          */
         defaults = {
-            offset: 0.5
+            offset: 0.8
         };
 
     var timer;
@@ -40,7 +40,7 @@
             // more objects, storing the result in the first object. The first object
             // is generally empty as we don't want to alter the default options for
             // future instances of the plugin
-            this.options = $.extend( {}, defaults, options );
+            this.options = $.extend({}, defaults, options);
             this._defaults = defaults;
             this._name = pluginName;
             window.onload = this.init();
@@ -49,7 +49,7 @@
 
     ScrollAnimations.prototype = {
 
-        init: function() {
+        init: function () {
             var _this = this;
 
             var $els = $(this.element);
@@ -58,7 +58,7 @@
                 || window.mozRequestAnimationFrame
                 || window.webkitRequestAnimationFrame
                 || window.msRequestAnimationFrame
-                || function(f){setTimeout(f, 1000/60)};
+                || function (f) { setTimeout(f, 1000 / 60) };
 
             //setup all items
             _this.setup($els);
@@ -81,11 +81,11 @@
             }, 50);
         },
 
-        setTriggerpoint: function() {
+        setTriggerpoint: function () {
             this.triggerPoint = window.innerHeight * this.options.offset;
         },
 
-        setup: function(items) {
+        setup: function (items) {
             this.setTriggerpoint();
 
             var $this = $(items),
@@ -94,16 +94,16 @@
             if ($children.length) {
 
                 // setup children
-                $children.each(function() {
+                $children.each(function () {
                     var $child = $(this);
                     var $delay = $child.attr('data-animation-delay');
 
                     $child.css({
-                        '-webkit-transition-delay':  $delay,
-                        '-moz-transition-delay':     $delay,
-                        '-ms-transition-delay':      $delay,
-                        '-o-transition-delay':       $delay,
-                        'transition-delay':          $delay
+                        '-webkit-transition-delay': $delay,
+                        '-moz-transition-delay': $delay,
+                        '-ms-transition-delay': $delay,
+                        '-o-transition-delay': $delay,
+                        'transition-delay': $delay
                     });
                 });
 
@@ -113,11 +113,11 @@
 
                 // setup single item
                 $this.css({
-                    '-webkit-transition-delay':  $delay,
-                    '-moz-transition-delay':     $delay,
-                    '-ms-transition-delay':      $delay,
-                    '-o-transition-delay':       $delay,
-                    'transition-delay':          $delay
+                    '-webkit-transition-delay': $delay,
+                    '-moz-transition-delay': $delay,
+                    '-ms-transition-delay': $delay,
+                    '-o-transition-delay': $delay,
+                    'transition-delay': $delay
                 });
 
             }
@@ -134,7 +134,7 @@
             requestAnimationFrame(this.updatePage.bind(this));
         },
 
-        animateElements: function() {
+        animateElements: function () {
             var _this = this;
             var scrollPos = window.pageYOffset;
 
@@ -143,7 +143,7 @@
 
             this.lastScrollPos = scrollPos;
 
-            $(_this.animationElements).each(function() {
+            $(_this.animationElements).each(function () {
                 var $this = $(this),
                     $children = $this.find('[data-animation-child]');
 
@@ -155,14 +155,14 @@
                     $this.addClass('animated');
 
                     // animate the children
-                    $children.each(function() {
-                        $(this).addClass('animated').addClass( $(this).attr('data-animation') )
+                    $children.each(function () {
+                        $(this).addClass('animated').addClass($(this).attr('data-animation'))
                     });
 
                 } else {
 
                     // animate the single item
-                    $this.addClass('animated').addClass( $this.attr('data-animation') );
+                    $this.addClass('animated').addClass($this.attr('data-animation'));
 
                 }
             });
@@ -172,8 +172,8 @@
 
     };
 
-    $.fn[ pluginName ] = function (options) {
-        return this.each(function() {
+    $.fn[pluginName] = function (options) {
+        return this.each(function () {
             if (!$.data(this, "plugin_" + pluginName)) {
                 $.data(this, "plugin_" + pluginName,
                     new ScrollAnimations(this, options));

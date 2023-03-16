@@ -4,3 +4,11 @@ $('[data-animation-start]').scrollAnimations({
  offset: 0.7
 });
 $containers.scrollAnimations();
+
+let cards = document.querySelectorAll('.card');
+
+for (let i = 0; i < cards.length; i++) {
+ cards[i].addEventListener('transitionend', () => {
+  cards[i].style.transitionDelay = '0s'
+ })
+}
