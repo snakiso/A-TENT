@@ -69,3 +69,13 @@ var swiper3 = new Swiper(".clients-slider", {
   },
  }
 });
+
+var swiper3 = new Swiper(".addition-slider", {
+ slidesPerView: 1,
+ spaceBetween: 0,
+ speed: 3000,
+ navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+ },
+});

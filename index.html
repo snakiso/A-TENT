@@ -6,21 +6,22 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap&_v=20230316120428" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap&_v=20230320095936" rel="stylesheet">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap&_v=20230316120428" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap&_v=20230320095936" rel="stylesheet">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap&_v=20230316120428" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap&_v=20230320095936" rel="stylesheet">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap&_v=20230316120428" rel="stylesheet">
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230316120428" />
- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230316120428"></script>
- <script src="js/jQuery2.2.0.js?_v=20230316120428"></script>
- <script src="js/ScrollAnimations.js?_v=20230316120428"></script>
- <link rel="stylesheet" href="css/style.min.css?_v=20230316120428">
+ <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap&_v=20230320095936" rel="stylesheet">
+ <link rel="preload" as="image" href="./img/main/hero.png" />
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230320095936" />
+ <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230320095936"></script>
+ <script src="js/jQuery2.2.0.js?_v=20230320095936"></script>
+ <script src="js/ScrollAnimations.js?_v=20230320095936"></script>
+ <link rel="stylesheet" href="css/style.min.css?_v=20230320095936">
  <title>Главная</title>
 </head>
 
@@ -83,7 +84,7 @@
         <div class="inner-box">
           <a href="#" class="menu__title">Контакты</a>
           <div class="menu__subpoint">
-            <span><img src="img/header/Phone_white.png" alt="">+7 (495) 502-99-00</span>
+            <a href="tel:+74955029900"><img src="img/header/Phone_white.png" alt="">+7 (495) 502-99-00</a>
             <span><img src="img/header/geo.png" alt="">Москва, ул. Бибиревская 4</span>
           </div>
         </div>
@@ -215,9 +216,6 @@
          <a href="#" class="drop-down__link">Презентации</a>
         </div>
         <div class="drop-down__link-box">
-         <a href="#" class="drop-down__link">Благодарности</a>
-        </div>
-        <div class="drop-down__link-box">
          <a href="#" class="drop-down__link">Вакансии</a>
         </div>
        </div>
@@ -292,7 +290,7 @@
           <span class="card__link">Премиальные решения</span>
         </div>
       </a>
-      <a href="#" class="card card-up" data-animation-container data-animation-delay=".2s">
+      <a href="#" class="card card-up-2 " data-animation-container >
         <div class="card__img">
           <img src="img/cards/photo-1.png" alt="">
         </div>
@@ -305,14 +303,14 @@
           <span class="card__link">Классические решения</span>
         </div>
       </a>
-      <a href="#" class="card card-up" data-animation-container data-animation-delay=".4s">
+      <a href="#" class="card card-up-4" data-animation-container >
         <div class="card__img">
           <img src="img/cards/photo-2.png" alt="">
         </div>
         <div class="card__content">
-          <h3 class="card__title margin-0">ДОПОЛНИТЕЛЬНЫЕ опции
+          <h3 class="card__title ">ДОПОЛНИТЕЛЬНЫЕ опции
             и оборудование</h3>
-          <p class="card__text">Большой и современный парк аренды быстровозводимых временных конструкций шириной от 3м
+          <p class="card__text card-text-margin">Большой и современный парк аренды быстровозводимых временных конструкций шириной от 3м
             до 40м
             позволяет создать
             пространство для проведения любого Event мероприятия. </p>
@@ -544,27 +542,30 @@
           </span>
         </div>
       </div>
-      <div class="director__more fade-down" data-animation-container>
+      <div class="director__more" data-animation-container>
         <div class="director__left-block">
-          <div class="director__text">
+          <div class="director__text fade-down" data-animation-child>
             Проработав в компании почти 20 лет, генеральный директор Дмитрий Демин по-прежнему
             вдохновляется проектами А-ТЕНТ и задачами, которые ставят перед ним клиенты — каждый раз.
           </div>
-          <div class="director__high-level">Высокий уровень менеджмента и оборудования</div>
-          <div class="director__text">«Я горжусь тем, что мы можем справиться с самыми сложными задачами. Тут
+          <div class="director__high-level fade-down" data-animation-child data-animation-delay=".2s">Высокий уровень
+            менеджмента и оборудования</div>
+          <div class="director__text fade-down" data-animation-child data-animation-delay=".4s">«Я горжусь тем, что мы
+            можем справиться с самыми сложными задачами. Тут
             раскрывается
             наш
             потенциал и возможности.»</div>
         </div>
         <div class="director__right-block">
-          <div class="director__text">«Качество нашего оборудования, высокий профессиональный уровень
+          <div class="director__text fade-down" data-animation-child data-animation-delay=".6s">«Качество нашего
+            оборудования, высокий профессиональный уровень
             персонала и индивидуальные решения, а также наша безупречная логистика и монтажные работы
             делают нас идеальным партнером для тех, кто ищет событие с эффектом вау».</div>
         </div>
       </div>
     </div>
   </div>
-  <div class="about__a-tent fade-down" data-animation-container>
+  <div class="about__a-tent fade-down" data-animation-container data-animation-start>
     <div class="wrapper">
       <img src="img/main/about-logo.png" alt="">
       <div class="about__content">
@@ -629,7 +630,7 @@
      <a href="mailto:tent@tent.ru" class="contacts__item"><img src="img/main/Mail.svg" alt="">tent@tent.ru</a>
      <a href="#" class="contacts__item"><img src="img/main/geo.svg" alt="">Москва, ул. Бибиревская 4</a>
      <a href="#" class="contacts__item"><img src="img/main/Telegram_white.svg" alt="">Telegram</a>
-     <a href="#" class="contacts__item"><img src="img/main/whatsapp.svg" alt="">Whats App</a>
+     <a href="#" class="contacts__item"><img src="img/main/whatsapp.svg" alt="">WhatsApp</a>
     </div>
    </div>
   </div>
@@ -694,6 +695,7 @@
    <div class="footer__politics">
     <a href="">Политика конфиденциальности <img src="img/footer/arrow.svg" alt=""></a>
     <span>© А-ТЕНТ, 2023</span>
+    <span class="developer">Разработка сайта:<a href="#">projectroom</a> </span>
    </div>
   </div>
   <div class="footer__contacts">
@@ -711,7 +713,7 @@
  </div>
 </footer>
 </body>
-<script src="./js/menu.js?_v=20230316120428"></script>
-<script src="./js/slider.js?_v=20230316120428"></script>
-<script src="./js/animation.js?_v=20230316120428"></script>
+<script src="./js/menu.js?_v=20230320095936"></script>
+<script src="./js/slider.js?_v=20230320095936"></script>
+<script src="./js/animation.js?_v=20230320095936"></script>
 </html>
