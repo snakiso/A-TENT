@@ -1,0 +1,94 @@
+.widget {
+ position: absolute;
+ max-width: 470px;
+ min-height: 475px;
+ background: rgba(255, 255, 255, 0.46);
+ backdrop-filter: blur(24px);
+ bottom: 0;
+ right: -7%;
+ border-radius: 0 70px 0 0;
+
+ &__inner-box {
+  padding: 24px 10px 20px 20px;
+ }
+
+ &__title {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 35px;
+
+  @media screen and (max-width: 1000px) {
+   font-size: 18px;
+  }
+ }
+
+ &__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  row-gap: 25px;
+
+  @media screen and (max-width: 1000px) {
+   row-gap: 20px;
+   column-gap: 15px;
+  }
+ }
+
+ &__item {
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  background: white;
+  border-radius: 40px;
+  transition: all .2s;
+
+  @media screen and (max-width: 1000px) {
+   padding: 13px 13px;
+   font-size: 12px;
+   height: 40px;
+  }
+ }
+
+ &__item:hover {
+  color: #20C2FF
+ }
+
+ @media screen and (max-width: 1600px) {
+  right: 15px;
+  max-width: 440px;
+ }
+
+ @media screen and (max-width: 1000px) {
+  max-width: calc(100% - 30px);
+  min-height: 250px;
+  right: 10px;
+  border-radius: 0 30px 0 0;
+ }
+}
+
+.widget::before,
+.widget::after {
+ content: '';
+ position: absolute;
+ height: 6px;
+ top: 0;
+ width: 95%;
+ background: linear-gradient(89.96deg, #20C2FF 52.94%, rgba(32, 194, 255, 0) 96.46%);
+
+ @media screen and (max-width: 1000px) {
+  height: 2px;
+ }
+}
+
+.widget::after {
+ width: 6px;
+ height: 100%;
+ left: 0;
+ background: linear-gradient(179.99deg, #20C2FF 7.97%, rgba(32, 194, 255, 0) 117.55%);
+
+ @media screen and (max-width: 1000px) {
+  width: 2px;
+ }
+}

@@ -1,0 +1,113 @@
+$color-dark-blue: #283755;
+$color-blue: #20C2FF;
+$main-padding: 120px;
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+
+.main {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.main-bg {
+  background: url(../img/designs/designs-bg.png);
+  background-repeat: no-repeat;
+}
+
+.decor-bg {
+  background-color: rgba(244, 244, 244, 0.69);
+  position: absolute;
+  height: 820px;
+  width: 100%;
+}
+
+.padding-top {
+  padding-top: $main-padding;
+
+  @media screen and (max-width: 1300px) {
+    padding-top: $main-padding * 0.375;
+  }
+}
+
+.padding-bottom {
+  padding-bottom: $main-padding;
+
+  @media screen and (max-width: 1300px) {
+    padding-bottom: $main-padding * 0.375;
+  }
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 12px;
+
+  @media screen and (max-width: 1300px) {
+    padding: 0 15px;
+  }
+}
+
+.ff-play {
+  font-family: 'Play', sans-serif;
+}
+
+.ff-raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.ff-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ff-work-sans {
+  font-family: 'Work Sans', sans-serif;
+}
+
+span {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: white;
+}
+
+
+@import '../html/common/cookies/cookies';
+@import 'animation';
+@import '../html/common/menu/menu';
+@import '../html/common/header/header';
+@import '../html/main-page/hero/hero';
+@import '../html/main-page/info/info';
+@import '../html/main-page/widget/widget';
+@import '../html/main-page/products/products';
+@import '../html/main-page/show/show';
+@import '../html/main-page/clients/clients';
+@import '../html/main-page/about/about';
+@import '../html/main-page/exp/exp';
+@import '../html/main-page/contacts/contacts';
+@import '../html/common/footer/footer';
+@import '../html/description/description';
+@import '../html/cards/cards';
+@import '../html/sliders/slider';
+@import '../html/common/interest/interest';
+@import '../html/addition-page/addition';
+@import '../html/shater-page/suitable/suitable';
+@import '../html/shater-page/benefits/benefits';
+@import '../html/shater-page/technical/technical';
+@import '../html/404-page/404';

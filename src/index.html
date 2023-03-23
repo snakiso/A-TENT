@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+@@include('html/common/head/head-2.html',{
+"title": "Главная"
+})
+
+<body class="body">
+  @@include('html/common/cookies/cookies.html',{})
+  @@include('html/common/menu/menu.html',{})
+  @@include('html/common/header/header-2.html',{})
+  <main class="main">
+    @@include('html/main-page/hero/hero.html',{})
+    <section class="info">
+      <div class="wrapper">
+        @@include('html/main-page/info/info.html',{})
+        @@include('html/main-page/widget/widget.html')
+      </div>
+    </section>
+    @@include('html/main-page/products/products.html',{})
+    @@include('html/main-page/show/show.html',{})
+    @@include('html/main-page/clients/clients.html',{})
+    @@include('html/main-page/about/about.html',{})
+    @@include('html/main-page/exp/exp.html',{})
+    @@include('html/main-page/contacts/contacts.html',{})
+  </main>
+  @@include('html/common/footer/footer.html',{})
+</body>
+<script src="./js/menu.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/animation.js"></script>
+
+</html>

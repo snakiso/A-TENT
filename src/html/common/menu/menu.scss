@@ -1,0 +1,485 @@
+.menu {
+  position: fixed;
+  top: 0;
+  min-height: 800px;
+  max-height: 1500px;
+  width: 100%;
+  background-color: rgba(246, 246, 246, 1);
+  background-image: url(../img/header/menu-bg.png);
+  z-index: 100;
+  top: -200%;
+  transition: all .5s;
+
+  &__contacts-mobile {
+    display: none;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: end;
+    column-gap: 50px;
+    max-width: 1600px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 0 20px;
+
+    input {
+      position: relative;
+      width: 260px;
+      height: 50px;
+      border-radius: 40px;
+      outline: none;
+      border: 2px solid rgba(190, 190, 190, 1);
+      font-size: 20px;
+      padding-left: 50px;
+      padding-right: 15px;
+      background-image: url(../img/header/menu_search.svg);
+      background-repeat: no-repeat;
+      background-position: 10px 10px;
+      background-size: 10%;
+    }
+
+  }
+
+  &__close {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgba(190, 190, 190, 1);
+    background-color: white;
+    cursor: pointer;
+  }
+
+  &__close::after,
+  &__close::before {
+    position: absolute;
+    top: 48%;
+    left: 18%;
+    content: "";
+    background: #081a3d;
+    width: 30px;
+    height: 3px;
+    transform: rotate(45deg);
+  }
+
+  &__close::before {
+    transform: rotate(-45deg);
+  }
+
+  .border {
+    background: white;
+    border: 1px solid #BEBEBE;
+    border-radius: 4px;
+  }
+
+  &__nav {
+    margin: auto;
+    padding: 0 20px;
+    margin-top: 60px;
+    display: flex;
+    column-gap: 40px;
+    max-width: 1600px;
+  }
+
+  &__central-block,
+  &__right-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    max-width: 400px;
+    flex: 1;
+
+    .menu__title {
+      padding-left: 45px;
+    }
+  }
+
+  &__solution,
+  &__contacts {
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+  }
+
+  &__projects,
+  &__contacts {
+    min-height: 200px;
+    transition: all .3s;
+
+    .inner-box {
+      width: 100%;
+      padding: 30px 0;
+    }
+  }
+
+  &__gallery {
+    min-height: 220px;
+    transition: all .3s;
+
+    .inner-box {
+      padding: 25px 0;
+    }
+  }
+
+  &__a-tent {
+    min-height: 337px;
+    transition: all .3s;
+
+    .inner-box {
+      padding: 20px 0;
+    }
+  }
+
+  &__left-block {
+    background: white;
+    min-height: 500px;
+    max-width: 700px;
+    transition: all .3s;
+
+    .inner-box {
+      padding: 55px 40px;
+    }
+
+    .menu__subpoint {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      justify-content: space-between;
+      row-gap: 40px;
+    }
+  }
+
+  &__design-item {
+    max-width: 290px;
+
+
+    a:first-child {
+      color: rgba(157, 157, 157, 1);
+      font-size: 18px !important;
+      text-transform: uppercase;
+      font-weight: 600;
+      max-width: 260px;
+      position: relative;
+      transition: all .2s;
+    }
+
+    a:first-child:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+  &__title {
+    color: $color-dark-blue;
+    text-transform: uppercase;
+    font-family: 'Play', sans-serif;
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all .2s;
+  }
+
+  &__title:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+  }
+
+  &__subpoint {
+    position: relative;
+    padding: 0px 45px;
+    margin-top: 55px;
+
+    a,
+    span {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      color: $color-dark-blue ;
+      margin-bottom: 20px;
+      transition: all .2s;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      color: #646464;
+      column-gap: 15px;
+    }
+
+  }
+
+  &__subpoint::before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: calc(100% - 90px);
+    top: -25px;
+    background-color: #BEBEBE;
+  }
+
+  &__left-block:hover,
+  &__solution:hover,
+  &__projects:hover,
+  &__contacts:hover,
+  &__gallery:hover,
+  &__a-tent:hover {
+    box-shadow: 4px 4px 25px rgba(40, 55, 85, 0.12);
+    border-radius: 0px 48px 0px 0px;
+  }
+
+}
+
+@media screen and (max-width: 1500px) {
+  .menu {
+    background-size: contain;
+    bottom: 0;
+    overflow: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__top {
+      max-width: 1100px;
+    }
+
+    &__nav {
+      max-width: 1100px;
+      flex-wrap: wrap;
+      row-gap: 30px;
+      column-gap: 30px;
+      padding-bottom: 50px;
+    }
+
+    &__left-block {
+      max-width: 670px;
+    }
+
+    &__right-block {
+      flex-direction: row;
+      max-width: none;
+      justify-content: space-between;
+    }
+
+    &__gallery {
+      flex-basis: 34%;
+    }
+
+    &__a-tent {
+      flex-basis: 63%;
+
+      .menu__subpoint {
+        display: grid;
+        grid-template-columns: 230px 150px;
+      }
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .menu {
+    min-height: 100vh;
+    max-height: 100vh;
+    background-image: none;
+
+    &__contacts-mobile {
+      display: block;
+    }
+
+    &__contacts-box {
+      margin-top: 30px;
+
+      a {
+        font-size: 14px;
+        color: black;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+    }
+
+    .mobile-arr {
+      position: relative;
+      width: 220px;
+    }
+
+    .mobile-btn {
+      transition: all .3s;
+    }
+
+    .mobile-arr::after {
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-bottom: 2px solid $color-blue;
+      border-right: 2px solid $color-blue;
+      transform: rotate(45deg);
+      transition: all .3s;
+      right: -30px;
+    }
+
+    .mobile-arr.active::after {
+      transform: rotate(-135deg);
+      top: 20px
+    }
+
+    &__nav {
+      flex-direction: column;
+      row-gap: 00px;
+    }
+
+    .menu__design-item a:first-child {
+      font-size: 16px !important;
+      font-weight: 400;
+      max-width: 100%;
+      text-transform: none;
+    }
+
+    &__close {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__close:before,
+    &__close:after {
+      width: 22px;
+      left: 20%;
+      height: 2px;
+    }
+
+    &__top {
+      input {
+        width: 180px;
+        height: 40px;
+        padding-left: 35px;
+        background-position: 10px 9px;
+        font-size: 14px;
+      }
+
+      ::placeholder {
+        text-align: end;
+      }
+
+      justify-content: space-between;
+    }
+
+    .border {
+      border: none;
+      position: relative;
+      background: none;
+    }
+
+    .border::after {
+      position: absolute;
+      content: '';
+      height: 1px;
+      width: 100%;
+      background-color: #D7D7D7;
+      bottom: 0;
+    }
+
+    &__subpoint {
+      margin-top: 20px;
+      padding: 0;
+
+      a {
+        font-size: 16px;
+      }
+    }
+
+    &__left-block {
+      min-height: fit-content;
+      max-width: 100%;
+      box-shadow: none;
+      background: none;
+      max-height: 50px;
+      overflow: hidden;
+
+      .inner-box {
+        padding: 0;
+      }
+
+      .menu__subpoint {
+        flex-direction: column;
+        row-gap: 5px;
+      }
+    }
+
+    &__subpoint::before {
+      display: none;
+    }
+
+    &__design-item {
+
+      max-width: 100%;
+
+      a:not(:first-child) {
+        display: none;
+
+      }
+
+      a:first-child {
+        color: black;
+      }
+    }
+
+    &__contacts {
+      display: none;
+    }
+
+    &__solution {
+      min-height: fit-content;
+    }
+
+    &__central-block,
+    &__right-block {
+      row-gap: 0px;
+      width: 100%;
+      max-width: none;
+      flex-direction: column;
+
+      .menu__title {
+        padding: 12px 0;
+      }
+    }
+
+    &__projects,
+    &__gallery,
+    &__a-tent {
+      min-height: fit-content;
+      max-height: 50px;
+      overflow: hidden;
+
+      .inner-box {
+        padding: 0;
+      }
+    }
+
+    &__a-tent {
+      .menu__subpoint {
+        display: block;
+      }
+    }
+
+    &__title {
+      padding: 12px 0;
+      font-size: 18px;
+    }
+
+    &__left-block:hover,
+    &__solution:hover,
+    &__projects:hover,
+    &__contacts:hover,
+    &__gallery:hover,
+    &__a-tent:hover {
+      box-shadow: none;
+      border-radius: none;
+    }
+  }
+}

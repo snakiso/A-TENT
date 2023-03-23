@@ -1,0 +1,107 @@
+.clients {
+  &__title {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 60px;
+    max-width: 1100px;
+  }
+}
+
+.clients-slider {
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 40px;
+  overflow-x: hidden;
+
+  .swiper-wrapper {
+    width: 100%;
+    display: flex;
+  }
+
+  .swiper-slide {
+    width: 100%;
+    border: 1px solid #D7D7D7;
+    min-width: 300px;
+    min-height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide:hover {
+    border: none;
+    box-shadow: 6px 11px 25px rgb(40 55 85 / 18%);
+  }
+
+  .swiper-pagination {
+    display: flex;
+    position: relative;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .swiper-pagination-bullet {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $color-blue;
+    border-radius: 50%;
+    opacity: 1;
+    background: none;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $color-blue;
+  }
+}
+
+
+@media screen and (max-width: 1300px) {
+  .clients {
+    &__title {
+      font-size: 30px;
+      max-width: 590px;
+      line-height: 40px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .clients {
+    padding: 45px 0 80px 0;
+
+    &__title {
+      font-family: 'Play', sans-serif;
+      font-size: 22px;
+      max-width: 400px;
+      line-height: 25px;
+      font-weight: 700;
+    }
+  }
+
+  .clients-slider {
+    .swiper-pagination {
+      display: none;
+    }
+  }
+
+  .clients-slider::before,
+  .clients-slider::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 20px;
+    left: 2px;
+    top: 65%;
+    background: url(../img/main/mobile-arrow.png);
+    background-repeat: repeat;
+  }
+
+  .clients-slider::after {
+    right: 2px;
+    left: auto;
+    transform: rotate(180deg);
+  }
+}

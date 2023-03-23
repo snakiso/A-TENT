@@ -1,0 +1,309 @@
+.footer {
+  background-color: $color-dark-blue;
+  font-size: 16px;
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    padding: 45px 12px;
+    column-gap: 135px;
+  }
+
+  .wrapper::before {
+    content: '';
+    position: absolute;
+    height: calc(100% - 90px);
+    width: 1px;
+    background-color: white;
+    right: 360px;
+  }
+
+  &__nav {
+    max-width: 870px;
+    flex: 1;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.035em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &__title:hover {
+    text-decoration: underline;
+  }
+
+  &__designs-box {
+    display: flex;
+    column-gap: 30px;
+
+    a {
+      max-width: 300px;
+      margin-bottom: 10px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:first-child {
+      color: white;
+    }
+  }
+
+  &__designs-block {
+    max-width: 310px;
+    flex: 1;
+
+    a:nth-child(1) {
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+  }
+
+  &__designs-block:nth-child(3) {
+    max-width: 180px;
+  }
+
+  &__nav-bottom {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 25px;
+  }
+
+
+  &__contacts-item {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+  }
+
+  &__contacts-secondary {
+    display: flex;
+    column-gap: 40px;
+    margin-top: 20px;
+  }
+
+  &__projects {
+    max-width: 310px;
+    flex: 1;
+
+    a {
+      margin-bottom: 10px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:first-child {
+      color: white;
+    }
+  }
+
+  &__gallery {
+    max-width: 310px;
+    flex: 1;
+
+    a {
+      margin-bottom: 10px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:first-child {
+      color: white;
+    }
+  }
+
+  &__a-tent {
+    a {
+      max-width: 300px;
+      margin-bottom: 10px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:first-child {
+      color: white;
+    }
+  }
+
+  &__solutions {
+    margin-top: 45px;
+    color: white !important;
+  }
+
+  &__politics {
+    display: flex;
+    font-size: 16px;
+    color: white;
+    margin-top: 30px;
+    column-gap: 30px;
+
+    a {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+  }
+
+  .developer {
+    display: flex;
+
+    a {
+      margin-left: 5px;
+    }
+
+    a:hover{
+      color: $color-blue;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .footer {
+    .wrapper {
+      flex-direction: column;
+      row-gap: 50px;
+    }
+
+    .wrapper::before {
+      display: none;
+    }
+
+    &__designs-box {
+      justify-content: space-between;
+
+      a {
+        max-width: none;
+      }
+    }
+
+    &__designs-block:nth-child(3) {
+      max-width: none;
+    }
+
+    &__nav-bottom {
+      max-width: none;
+      justify-content: space-between;
+    }
+
+    &__gallery {
+      max-width: 135px;
+    }
+
+    &__a-tent {
+      max-width: 280px;
+      flex: 1;
+    }
+
+    &__politics {
+      position: absolute;
+      bottom: 25px;
+    }
+
+    &__contacts {
+      padding-bottom: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    .wrapper {
+      row-gap: 15px;
+      padding: 25px 15px;
+    }
+
+    &__designs-block {
+      display: none;
+    }
+
+    &__title {
+      margin-bottom: 5px;
+      line-height: 24px;
+      font-size: 14px;
+    }
+
+    &__nav-bottom {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    &__solutions {
+      display: block !important;
+      color: white !important;
+      margin-top: 0;
+    }
+
+    &__projects,
+    &__gallery,
+    &__a-tent {
+      a:not(:first-child) {
+        display: none;
+      }
+
+      a {
+        margin-bottom: 5px;
+      }
+    }
+
+    &__contacts {
+      position: relative;
+      padding-bottom: 80px;
+
+      img {
+        display: none;
+      }
+    }
+
+    &__contacts::before {
+      position: absolute;
+      content: '';
+      width: 80%;
+      height: 2px;
+      background-color: rgba(255, 255, 255, 0.45);
+      bottom: 75px;
+    }
+
+    &__contacts-item {
+      font-size: 14px;
+      padding-bottom: 10px;
+    }
+
+
+    &__contacts-secondary {
+      display: none;
+    }
+
+    &__politics {
+      flex-direction: column;
+      row-gap: 10px;
+      font-size: 13px;
+
+      a {
+        img {
+          width: 7px;
+        }
+      }
+    }
+  }
+}

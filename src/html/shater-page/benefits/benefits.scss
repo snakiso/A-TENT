@@ -1,0 +1,31 @@
+.benefits {
+ background-image: url(../img/designs/shater-bg.png);
+ background-repeat: no-repeat;
+ background-position: left center;
+
+ .wrapper {
+  padding: 120px 0;
+  display: grid;
+  grid-template-columns: 535px 520px;
+  justify-content: space-between;
+ }
+
+ &__box:last-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 15px;
+ }
+
+ &__title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+ }
+
+ &__text {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 12px;
+ }
+}

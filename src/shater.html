@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+@@include('html/common/head/head.html',{
+"title": "Конструкции"
+})
+
+<body class="body">
+  @@include('html/common/cookies/cookies.html',{})
+  @@include('html/common/menu/menu.html',{})
+  @@include('html/common/header/header.html',{})
+  <main class="main main-bg">
+    <div class="decor-bg"></div>
+    <section class="description">
+      @@include('html/description/description-shater.html', {})
+    </section>
+    @@include('html/sliders/shater-slider.html',{})
+    @@include('html/shater-page/benefits/benefits.html',{})
+    @@include('html/shater-page/technical/technical.html',{})
+    @@include('html/shater-page/suitable/suitable.html',{})
+    <section class="slider padding-top">
+      @@include('html/sliders/сarousel-classic.html')
+    </section>
+    @@include('html/main-page/clients/clients.html',{})
+    @@include('html/main-page/contacts/contacts.html',{})
+  </main>
+@@include('html/common/footer/footer.html',{})
+</body>
+<script src="./js/slider.js"></script>
+<script src="./js/menu.js"></script>
+<script src="./js/animation.js"></script>
+<script src="./js/technical.js"></script>
+
+</html>

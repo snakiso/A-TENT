@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+@@include('html/common/head/head-2.html',{
+"title": "Дополнительные возможности"
+})
+
+<body class="body">
+ @@include('html/common/cookies/cookies.html',{})
+ @@include('html/common/menu/menu.html',{})
+ @@include('html/common/header/header.html',{})
+ <main class="main main-bg">
+  <div class="decor-bg"></div>
+  <section class="description">
+   @@include('html/description/description-addition.html',{})
+  </section>
+  <section class="addition padding-top">
+   <div class="wrapper">
+    @@include('html/addition-page/panels.html',{})
+    @@include('html/addition-page/floor.html',{})
+    @@include('html/addition-page/inter.html',{})
+    @@include('html/addition-page/panorama.html',{})
+    @@include('html/addition-page/fabric.html',{})
+    @@include('html/addition-page/condition.html',{})
+    @@include('html/addition-page/warm.html',{})
+   </div>
+  </section>
+ </main>
+ @@include('html/common/footer/footer.html',{})
+</body>
+<script src="./js/menu.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/animation.js"></script>
+
+</html>

@@ -1,0 +1,82 @@
+.hero {
+ padding: 240px 0 150px 0;
+ background-image: url(../img/main/hero.png);
+ background-repeat: no-repeat;
+ background-position: center 0;
+ color: white;
+
+ &__subtitle {
+  font-size: 22px;
+  font-weight: 500;
+ }
+
+ &__title {
+  font-size: 90px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-top: 5px;
+ }
+
+ &__text {
+  font-size: 22px;
+  font-weight: 500;
+  max-width: 900px;
+  margin-top: 10px;
+ }
+
+ &__feedback {
+  display: flex;
+  padding-left: 32px;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  background-color: $color-blue;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 45px;
+ }
+}
+
+@media screen and (max-width: 1300px) {
+ .hero {
+  &__title {
+   margin-top: 15px;
+   font-size: 75px;
+  }
+
+  &__text {
+   font-size: 26px;
+   max-width: 470px;
+   margin-bottom: 45px;
+  }
+ }
+}
+
+@media screen and (max-width: 768px) {
+ .hero {
+  padding: 100px 0 120px 0;
+  background-size: cover;
+  &__feedback {
+   padding: 0;
+   justify-content: center;
+   width: 160px;
+   height: 40px;
+   font-size: 14px;
+   margin-top: -7px;
+  }
+
+  &__subtitle {
+   font-size: 16px;
+  }
+
+  &__title {
+   font-size: 32px;
+  }
+
+  &__text {
+   font-size: 16px;
+  }
+
+ }
+}
