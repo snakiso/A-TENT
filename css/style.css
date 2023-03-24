@@ -1451,6 +1451,7 @@ a {
 .contacts__block {
   position: relative;
   width: 100%;
+  mix-blend-mode: color;
 }
 
 .contacts__block .wrapper {
