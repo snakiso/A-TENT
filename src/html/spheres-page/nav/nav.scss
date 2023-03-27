@@ -1,0 +1,27 @@
+.spheres-page-nav {
+ background-color: $color-dark-blue;
+
+ &__link {
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Raleway', sans-serif;
+  padding: 30px 0 20px 0;
+  margin-right: 60px;
+  cursor: pointer;
+
+  &.active {
+   color: white;
+   border-bottom: 8px solid $color-blue;
+  }
+ }
+
+ .description__feedback {
+  color: #283755;
+  bottom: 0;
+  top: auto;
+  min-height: 280px;
+ }
+}

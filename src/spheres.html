@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+@@include('html/common/head/head-2.html',{
+"title": "Главная"
+})
+
+<body class="body">
+  @@include('html/common/cookies/cookies.html',{})
+  @@include('html/common/menu/menu.html',{})
+  @@include('html/common/header/header-2.html',{})
+  <main class="main">
+    @@include('html/spheres-page/hero/hero.html',{})
+    @@include('html/spheres-page/nav/nav.html',{})
+    <div id="description" class="shperes-content">
+      @@include('html/spheres-page/chess/chess.html',{})
+      @@include('html/spheres-page/we-can/we-can.html',{})
+      @@include('html/spheres-page/we-offer/we-offer.html',{})
+    </div>
+    <div id="designs" class="shperes-content">
+      @@include('html/spheres-page/spheres-designs/designs.html',{})
+    </div>
+    <div id="recommendations" class="shperes-content">
+      @@include('html/spheres-page/optimization/optimization.html',{})
+    </div>
+  </main>
+  @@include('html/common/footer/footer.html',{})
+</body>
+<script src="./js/menu.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/animation.js"></script>
+<script src="./js/spheres.js"></script>
+
+</html>

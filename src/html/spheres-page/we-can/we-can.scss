@@ -1,0 +1,28 @@
+.we-can {
+ background: #F6F6F6;
+
+ .wrapper {
+  padding: 60px 0;
+ }
+
+ &__box:not(:last-child) {
+  margin-bottom: 60px;
+  border-bottom: 1px solid #A4A4A4;
+ }
+
+ &__box {
+  max-width: 1180px;
+ }
+
+ &__title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: 0.04em;
+  margin-bottom: 30px;
+ }
+
+ &__text {
+  font-size: 18px;
+ }
+}

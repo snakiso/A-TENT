@@ -1,0 +1,26 @@
+.spheres-hero {
+  padding: 300px 0 0 0;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-top: 0;
+    font-size: 50px;
+    line-height: 64px;
+    font-weight: 600;
+    max-width: 800px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 770px;
+  }
+}
+
+.shperes-content {
+  animation: fadeEffect 1s;
+}

@@ -75,6 +75,7 @@
   margin: auto;
   padding-top: 50px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
  }
 
@@ -127,6 +128,10 @@
   font-weight: 500;
  }
 
+ &__tabs-content-mobile {
+  display: none;
+ }
+
  @keyframes fadeEffect {
   from {
    opacity: 0;
@@ -134,6 +139,110 @@
 
   to {
    opacity: 1;
+  }
+ }
+
+ @media screen and (max-width: 1300px) {
+  .wrapper {
+   padding: 40px 15px;
+  }
+
+  &__title {
+   font-size: 34px;
+  }
+
+  &__text {
+   font-size: 16px;
+  }
+
+  &__link {
+   font-size: 16px;
+  }
+ }
+
+ @media screen and (max-width: 768px) {
+  .wrapper {
+   padding: 40px 15px;
+  }
+
+  &__mobile-box {
+   position: relative;
+   width: 100%;
+   margin-bottom: 15px;
+   background-color: white;
+   max-height: 40px;
+   overflow: hidden;
+   transition: all .2s;
+
+   &.active {
+    max-height: 1000px;
+    border-top: 3px solid $color-blue;
+
+    &::before {
+     transform: rotate(90deg);
+     right: 37px;
+    }
+   }
+
+   &::after {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 2px;
+    background: $color-blue;
+    top: 20px;
+    right: 30px;
+   }
+
+   &::before {
+    position: absolute;
+    background: $color-blue;
+    content: '';
+    height: 15px;
+    width: 2px;
+    top: 14px;
+    right: 36px;
+    transition: all .2s;
+   }
+  }
+
+  &__tabs-content-mobile {
+   display: block;
+   background-color: white;
+  }
+
+  &__title {
+   font-size: 22px;
+   font-family: 'Play', sans-serif;
+  }
+
+  &__text {
+   font-size: 14px;
+  }
+
+  &__tabs {
+   flex-direction: column;
+  }
+
+  &__link {
+   width: 100%;
+   height: 40px;
+   font-size: 14px;
+   font-weight: 700;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   padding: 0;
+
+   &.active {
+    font-weight: 700;
+    border: none;
+   }
+  }
+
+  &__link:nth-child(2) {
+   border-left: none;
+   border-right: none;
   }
  }
 }

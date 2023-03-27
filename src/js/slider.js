@@ -3,10 +3,16 @@ const swiper = new Swiper('.project-slider', {
   nextEl: '.swiper-button-next',
   prevEl: '.swiper-button-prev',
  },
- slidesPerView: 'auto',
+ slidesPerView: 1,
  spaceBetween: 30,
  autoWidth: false,
- freeMode: true,
+ freeMode: false,
+ breakpoints: {
+  768: {
+   slidesPerView: 'auto',
+   freeMode: true,
+  }
+ }
 });
 
 const swiper1 = new Swiper('.solutions-slider', {
@@ -86,8 +92,14 @@ const swiper4 = new Swiper('.design-slider', {
   prevEl: '.swiper-button-prev',
  },
  slidesPerView: 'auto',
- spaceBetween: 30,
+ spaceBetween: 10,
  autoWidth: false,
  centeredSlides: true,
  loop: true,
+ 768: {
+  slidesPerView: 'auto',
+  freeMode: true,
+  spaceBetween: 30,
+  centeredSlides: true,
+ }
 });

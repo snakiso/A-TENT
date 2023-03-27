@@ -82,6 +82,43 @@
             transform: rotate(180deg) translate(65%, 50%);
         }
     }
+
+    @media screen and (max-width: 768px) {
+        &__title {
+            font-size: 22px;
+            font-family: 'Play', sans-serif;
+        }
+
+        .project-slider {
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .project-slider::before,
+        .project-slider::after {
+            position: absolute;
+            content: '';
+            width: 10px;
+            height: 20px;
+            left: -13px;
+            top: 33%;
+            background: url(../img/main/mobile-arrow.png);
+            background-repeat: repeat;
+        }
+
+        .project-slider::after {
+            right: -13px;
+            left: auto;
+            transform: rotate(180deg);
+        }
+
+        .swiper-slide {
+            img {
+                height: 230px;
+                object-fit: cover;
+            }
+        }
+    }
 }
 
 .design-slider {
@@ -105,6 +142,23 @@
     .swiper-button-next {
         background-color: white;
     }
+
+    @media screen and (max-width: 768px) {
+        .swiper-slide {
+            flex-shrink: 1;
+
+            img {
+                height: 230px;
+                width: 280px;
+                object-fit: cover;
+            }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
+    }
 }
 
 .swiper-slide {
@@ -124,6 +178,13 @@
     opacity: 0;
     transition: all .4s;
     transition-delay: .2s;
+
+    @media screen and (max-width: 768px) {
+        bottom: 10px;
+        left: 10px;
+        font-size: 14px;
+        line-height: 16px;
+    }
 }
 
 .swiper-slide-active,
@@ -131,6 +192,16 @@
     .project-slider-text {
         transform: translateX(00px);
         opacity: 1;
+
+    }
+}
+
+.swiper-slide-next {
+    .project-slider-text {
+        @media screen and (max-width: 768px) {
+            transform: translateX(-200px);
+            opacity: 0;
+        }
     }
 }
 
@@ -247,7 +318,9 @@
         width: 115px;
         height: 40px;
         left: 50%;
-        padding-left: 20px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
         font-size: 14px !important;
         transform: translateX(-50%);
     }

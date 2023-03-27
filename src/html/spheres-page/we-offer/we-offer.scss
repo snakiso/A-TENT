@@ -1,0 +1,52 @@
+.we-offer {
+ background-image: url('../img/spheres/bg.png');
+ background-repeat: no-repeat;
+ background-position: bottom left;
+
+
+ &__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.04em;
+  max-width: 900px;
+  margin-top: 15px;
+  margin-bottom: 35px;
+ }
+
+ &__container {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 505px 470px;
+  justify-content: space-between;
+  row-gap: 40px;
+ }
+
+ &__box {
+  position: relative;
+  padding-left: 20px;
+ }
+
+ &__box::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background: $color-blue;
+ }
+
+ &__subtitle {
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+ }
+
+ &__text {
+  font-size: 18px;
+  line-height: 24px;
+ }
+
+
+}

@@ -1,0 +1,44 @@
+.spheres-designs {
+
+ background-image: url('../img/spheres/bg.png');
+ background-repeat: no-repeat;
+ background-position: bottom left;
+
+ &__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.04em;
+  max-width: 1060px;
+ }
+
+ &__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 1060px;
+ }
+
+ &__buttons {
+  display: flex;
+  margin-top: 40px;
+ }
+
+ &__premium-link {
+  background-color: $color-blue;
+  padding: 15px 30px;
+  border-radius: 40px;
+  font-weight: 600;
+  margin-right: 25px;
+ }
+
+ &__classic-link {
+  background-color: white;
+  padding: 15px 30px;
+  border: 1px solid $color-blue;
+  border-radius: 40px;
+  font-weight: 600;
+  color: black;
+ }
+
+}

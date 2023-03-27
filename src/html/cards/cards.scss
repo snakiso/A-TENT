@@ -19,6 +19,12 @@
   font-size: 40px;
   max-width: 1000px;
   margin-top: 12px;
+
+  @media screen and (max-width: 768px) {
+   font-size: 22px;
+   letter-spacing: 0.02em;
+   font-family: 'Play', sans-serif;
+  }
  }
 }
 
@@ -69,6 +75,17 @@
   }
  }
 
+ &__name {
+  font-size: 22px;
+  color: rgba(8, 26, 61, 1);
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 768px) {
+   font-size: 16px;
+   letter-spacing: 0.03em;
+   margin: 0;
+  }
+ }
 
  &__title {
   text-transform: uppercase;
@@ -179,8 +196,8 @@
   text-transform: uppercase;
   font-weight: 700;
  }
+
+ @media screen and (max-width: 1300px) {
+  display: none;
+ }
 }
-
-
-
-

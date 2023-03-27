@@ -35,18 +35,18 @@ body {
 }
 
 .padding-top {
-  padding-top: $main-padding;
+  padding-top: $main-padding !important;
 
   @media screen and (max-width: 1300px) {
-    padding-top: $main-padding * 0.375;
+    padding-top: $main-padding * 0.375 !important;
   }
 }
 
 .padding-bottom {
-  padding-bottom: $main-padding;
+  padding-bottom: $main-padding !important;
 
   @media screen and (max-width: 1300px) {
-    padding-bottom: $main-padding * 0.375;
+    padding-bottom: $main-padding * 0.375 !important;
   }
 }
 
@@ -111,3 +111,8 @@ a {
 @import '../html/shater-page/benefits/benefits';
 @import '../html/shater-page/technical/technical';
 @import '../html/404-page/404';
+@import '../html/spheres-page/hero/hero';
+@import '../html/spheres-page/nav/nav';
+@import '../html/spheres-page/we-can/we-can';
+@import '../html/spheres-page/we-offer/we-offer';
+@import '../html/spheres-page/spheres-designs/designs';

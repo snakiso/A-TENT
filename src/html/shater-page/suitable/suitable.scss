@@ -15,6 +15,7 @@
 
  &__content {
   display: flex;
+  flex-wrap: wrap;
  }
 
  &__content.grid {
@@ -30,6 +31,7 @@
   font-size: 18px;
   font-weight: 500;
   padding-left: 10px;
+  line-height: 24px;
  }
 
  &__item:before {
@@ -37,7 +39,57 @@
   content: '';
   left: 0;
   width: 3px;
-  height: 24px;
+  height: 100%;
   background-color: $color-blue;
+ }
+
+ @media screen and (max-width: 1300px) {
+  .wrapper {
+   padding: 50px 15px 10px;
+  }
+
+  &__content.grid {
+   display: flex;
+  }
+
+  &__title {
+   font-size: 32px;
+   margin-bottom: 35px;
+  }
+
+  &__item {
+   font-size: 16px;
+  }
+ }
+
+ @media screen and (max-width: 768px) {
+  &__content.grid {
+   flex-direction: column;
+  }
+ }
+
+
+ @media screen and (max-width: 500px) {
+  .wrapper {
+   padding: 20px 15px 20px;
+  }
+
+
+
+  &__title {
+   font-family: 'Play', sans-serif;
+   font-size: 18px;
+   text-transform: uppercase;
+  }
+
+  &__item {
+   font-size: 14px;
+   max-width: 220px;
+   margin-bottom: 15px;
+  }
+
+  &__content {
+   flex-direction: column;
+  }
  }
 }
