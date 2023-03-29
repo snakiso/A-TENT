@@ -9,6 +9,7 @@ $main-padding: 120px;
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -116,3 +117,8 @@ a {
 @import '../html/spheres-page/we-can/we-can';
 @import '../html/spheres-page/we-offer/we-offer';
 @import '../html/spheres-page/spheres-designs/designs';
+@import '../html/spheres-page/optimization/optimization';
+@import '../html/spheres-page/advice/advice';
+@import '../html/why-page/why/why';
+@import '../html/why-page/review/why-review';
+@import '../html/why-page/certificate/certificate';

@@ -1,0 +1,141 @@
+.why-review {
+ position: relative;
+ padding-bottom: 120px;
+
+ &__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.04em;
+ }
+
+ &__decor {
+  min-height: 640px;
+  width: 42%;
+  z-index: 1;
+  position: absolute;
+  background-color: $color-dark-blue;
+ }
+
+ &__photo {
+  padding-left: 0%;
+  position: relative;
+  z-index: 2;
+  height: fit-content;
+
+  img {
+   display: block;
+  }
+ }
+
+ &__photo:before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 8px;
+  background: $color-blue;
+ }
+
+ &__info {
+  display: flex;
+  column-gap: 60px;
+  min-height: 520px;
+  position: relative;
+  top: 40px;
+ }
+
+ &__quote {
+  max-width: 620px;
+  position: relative;
+  top: -23px;
+ }
+
+ &__quote-text {
+  position: relative;
+  font-size: 28px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  margin-bottom: 55px;
+  padding-left: 63px;
+  max-width: 425px;
+ }
+
+ &__quote-text::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/main/quote.png);
+  top: -17px;
+  left: 0;
+  width: 33px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+ }
+
+ &__quote-text::after {
+  position: absolute;
+  content: '';
+  background-image: url(../img/main/quote.png);
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  bottom: -20px;
+  right: -57px;
+  width: 33px;
+  height: 30px;
+  background-size: contain;
+ }
+
+ &__name {
+  position: relative;
+  padding-left: 63px;
+  font-size: 20px;
+  font-weight: 600;
+ }
+
+ &__name:before {
+  position: absolute;
+  left: 63px;
+  top: -20px;
+  width: 60%;
+  height: 1px;
+  background: rgba(8, 26, 61, 0.24);
+  content: '';
+ }
+
+ &__position {
+  font-size: 18px;
+  line-height: 24px;
+  color: #3E4145;
+  padding-left: 63px;
+  max-width: 425px;
+  margin-bottom: 45px;
+ }
+
+
+
+ &__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  max-width: 600px;
+ }
+
+ &__high-level {
+  padding-left: 15px;
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 45px 0 25px 0;
+  max-width: 520px;
+ }
+
+ &__high-level:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background-color: $color-blue;
+ }
+
+}

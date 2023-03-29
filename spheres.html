@@ -6,18 +6,18 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap&_v=20230327132458" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap&_v=20230327132458" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap&_v=20230327132458" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap&_v=20230327132458" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap&_v=20230329145604" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap&_v=20230329145604" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap&_v=20230329145604" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap&_v=20230329145604" rel="stylesheet">
  <link rel="shortcut icon" href="img/main/favicon-32x32.png" type="image/x-icon">
  <link rel="preload" as="image" href="./img/main/hero.png" />
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230327132458" />
- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230327132458"></script>
- <script src="js/jQuery2.2.0.js?_v=20230327132458"></script>
- <script src="js/ScrollAnimations.js?_v=20230327132458"></script>
- <link rel="stylesheet" href="css/style.min.css?_v=20230327132458">
- <title>Главная</title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230329145604" />
+ <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230329145604"></script>
+ <script src="js/jQuery2.2.0.js?_v=20230329145604"></script>
+ <script src="js/ScrollAnimations.js?_v=20230329145604"></script>
+ <link rel="stylesheet" href="css/style.min.css?_v=20230329145604">
+ <title>Сферы</title>
 </head>
 
 <body class="body">
@@ -239,10 +239,10 @@
 </section>
     <div class="spheres-page-nav">
  <div class="wrapper">
-  <button class="spheres-page-nav__link active" onclick="openTab(event, 'description')"
-   id="defaultOpen">Описание</button>
+  <button class="spheres-page-nav__link active" onclick="openTab(event, 'description')">Описание</button>
   <button class="spheres-page-nav__link" onclick="openTab(event, 'designs')">Конструкции</button>
-  <button class="spheres-page-nav__link" onclick="openTab(event, 'recommendations')">Рекомендации</button>
+  <button class="spheres-page-nav__link" onclick="openTab(event, 'recommendations')"
+   id="defaultOpen">Рекомендации</button>
   <div class="description__feedback">
    <span class="description__feedback-question">Заинтересовали наши решения?</span>
    <p>Не стесняйтесь обращаться к нам за дополнительной информацией об аренде наших
@@ -253,75 +253,81 @@
 </div>
     <div id="description" class="shperes-content">
       <section class="addition">
- <div class="wrapper">
-  <div class="addition__box">
-   <div class="addition__img">
-    <img src="img/spheres/oh.png" alt="">
-   </div>
-   <div class="addition-content">
-    <h3 class="addition__title">Добавьте «вау эффект»</h3>
-    <p class="addition__text">Мы проектируем и строим временные решения высшего класса для мероприятий любого формата и
-     масштаба. У нас есть широкий
-     выбор конструкций для проведения мероприятий, которые могут устанавливаться на любой открытой площадке. Наши
-     конструкции
-     отличаются своим дизайном, качеством сборки и стилем. Мы создаем пространственные решения, которые добавят
-     «вау-эффект»
-     вашему мероприятию.</p>
-   </div>
+  <div class="wrapper">
+    <div class="addition__box" data-animation-container>
+      <div class="addition__img fade-left" data-animation-child>
+        <img src="img/spheres/oh.png" alt="">
+      </div>
+      <div class="addition-content card-up-2" data-animation-child>
+        <h3 class="addition__title">Добавьте «вау эффект»</h3>
+        <p class="addition__text">Мы проектируем и строим временные решения высшего класса для мероприятий любого
+          формата и
+          масштаба. У нас есть широкий
+          выбор конструкций для проведения мероприятий, которые могут устанавливаться на любой открытой площадке. Наши
+          конструкции
+          отличаются своим дизайном, качеством сборки и стилем. Мы создаем пространственные решения, которые добавят
+          «вау-эффект»
+          вашему мероприятию.</p>
+      </div>
+    </div>
+    <div class="addition__box reverse" data-animation-container>
+      <div class="addition__img fade-right" data-animation-child>
+        <img src="img/spheres/project.png" alt="">
+      </div>
+      <div class="addition-content card-up-2" data-animation-child>
+        <h3 class="addition__title">Наши проекты</h3>
+        <p class="addition__text">За свою долгую историю мы заработали отличную репутацию, предлагая качественные
+          иинновационные решения для большого
+          количества национальных и международных мероприятий. Мы поставили конструкции для крупнейших форумов таких как
+          Армия,
+          ПМЭФ, Финансовый форум, Энергетическая не-деля и других российских и международных событий.</p>
+      </div>
+    </div>
   </div>
-  <div class="addition__box reverse">
-   <div class="addition__img">
-    <img src="img/spheres/project.png" alt="">
-   </div>
-   <div class="addition-content">
-    <h3 class="addition__title">Наши проекты</h3>
-    <p class="addition__text">За свою долгую историю мы заработали отличную репутацию, предлагая качественные
-     иинновационные решения для большого
-     количества национальных и международных мероприятий. Мы поставили конструкции для крупнейших форумов таких как
-     Армия,
-     ПМЭФ, Финансовый форум, Энергетическая не-деля и других российских и международных событий.</p>
-   </div>
-  </div>
- </div>
 </section>
       <section class="we-can">
- <div class="wrapper">
-  <div class="we-can__box">
-   <span class="we-can__title">Позвольте нам помочь вам реализовать ваши цели</span>
-   <p class="we-can__text">У нас есть весь необходимый опыт, чтобы помочь вам превратить ваше мероприятие в успешное
-    событие для ваших гостей. Все
-    для вашего мероприятия</p>
+  <div class="wrapper">
+    <div class="we-can__box card-up" data-animation-container>
+      <span class="we-can__title">Позвольте нам помочь вам реализовать ваши цели</span>
+      <p class="we-can__text">У нас есть весь необходимый опыт, чтобы помочь вам превратить ваше мероприятие в успешное
+        событие для ваших гостей. Все
+        для вашего мероприятия</p>
+    </div>
+    <div class="we-can__box card-up" data-animation-container>
+      <span class="we-can__title">Все для вашего мероприятия</span>
+      <p class="we-can__text">У нас есть широкий спектр инновационных конструкций, специально разработанных для выставок
+        и
+        конгрессов. Нужна ли вам
+        премиальная входная группа, качественные пространства для VIP гостей, высокофункциональные вспомогательные
+        конструкции
+        (пресс-центр, кейтеринг и т. д.), у нас есть опыт, знания и ассортимент продукции, чтобы предложить вам
+        наилучшие
+        возможные варианты. Мы проектируем и возводим все наши конструкции, чтобы гарантировать, решения и дизайн,
+        который
+        соответствует высоким стандартам наших клиентов.</p>
+    </div>
+    <div class="we-can__box card-up" data-animation-container>
+      <span class="we-can__title">Ожидайте самого лучшего от своих поставщиков</span>
+      <p class="we-can__text">Ищете ли вы пространство для выставки или конгресса российского или международного
+        масштаба,
+        всегда работайте с
+        партнером, которому вы можете доверять, чтобы выполнить работу, что бы ни случилось. Выберите партнера, который
+        будет с
+        вами, чтобы создать уникальный и незабываемый опыт и который действительно привержен успеху вашего мероприятия.
+        Несмотря
+        на погодные условия, технические проблемы или непредвиденные обстоятельства, шоу должно продолжаться.</p>
+    </div>
+    <div class="we-can__box card-up" data-animation-container>
+      <span class="we-can__title">Мы можем работать в сжатые сроки, и всегда есть план Б</span>
+      <p class="we-can__text">Наша продукция разработана в соответствии с самыми высокими мировыми стандартами
+        безопасности. Это одна из причин, по
+        которой А-ТЕНТ регулярно становится поставщиком временной инфраструктуры для крупнейших российских и
+        международных
+        проектов в России. Мы предлагаем самые высокие стандарты с точки зрения целостности конструкции и соблюдения
+        требований
+        по охране труда и технике безопасности.</p>
+    </div>
   </div>
-  <div class="we-can__box">
-   <span class="we-can__title">Все для вашего мероприятия</span>
-   <p class="we-can__text">У нас есть широкий спектр инновационных конструкций, специально разработанных для выставок и
-    конгрессов. Нужна ли вам
-    премиальная входная группа, качественные пространства для VIP гостей, высокофункциональные вспомогательные
-    конструкции
-    (пресс-центр, кейтеринг и т. д.), у нас есть опыт, знания и ассортимент продукции, чтобы предложить вам наилучшие
-    возможные варианты. Мы проектируем и возводим все наши конструкции, чтобы гарантировать, решения и дизайн, который
-    соответствует высоким стандартам наших клиентов.</p>
-  </div>
-  <div class="we-can__box">
-   <span class="we-can__title">Ожидайте самого лучшего от своих поставщиков</span>
-   <p class="we-can__text">Ищете ли вы пространство для выставки или конгресса российского или международного масштаба,
-    всегда работайте с
-    партнером, которому вы можете доверять, чтобы выполнить работу, что бы ни случилось. Выберите партнера, который
-    будет с
-    вами, чтобы создать уникальный и незабываемый опыт и который действительно привержен успеху вашего мероприятия.
-    Несмотря
-    на погодные условия, технические проблемы или непредвиденные обстоятельства, шоу должно продолжаться.</p>
-  </div>
-  <div class="we-can__box">
-   <span class="we-can__title">Мы можем работать в сжатые сроки, и всегда есть план Б</span>
-   <p class="we-can__text">Наша продукция разработана в соответствии с самыми высокими мировыми стандартами
-    безопасности. Это одна из причин, по
-    которой А-ТЕНТ регулярно становится поставщиком временной инфраструктуры для крупнейших российских и международных
-    проектов в России. Мы предлагаем самые высокие стандарты с точки зрения целостности конструкции и соблюдения
-    требований
-    по охране труда и технике безопасности.</p>
-  </div>
- </div>
 </section>
       <section class="we-offer">
  <div class="wrapper padding-top">
@@ -423,14 +429,106 @@
 </section>
     </div>
     <div id="recommendations" class="shperes-content">
-      <section class="spheres-designs">
- <div class="wrapper padding-top">
-  <span class="spheres-designs__title">Оптимизированный процесс от начала
-   и до конца</span>
-  <p class="spheres-designs__text">Наша главная цель – убедиться, что вы достигаете своих целей. Мы будем сопровождать
-   вас на каждом этапе, чтобы предложить решение по аренде конструкций, которое наилучшим
-   образом соответствует вашим потребностям.</p>
+      <section class="spheres-optimization">
+  <div class="wrapper padding-top padding-bottom">
+    <span class="spheres-optimization__title">Оптимизированный процесс от начала
+      и до конца</span>
+    <p class="spheres-optimization__text">Наша главная цель – убедиться, что вы достигаете своих целей. Мы будем сопровождать
+      вас на каждом этапе, чтобы предложить решение по аренде конструкций, которое наилучшим
+      образом соответствует вашим потребностям.</p>
+    <div class="spheres-designs__buttons">
+      <a href="#" class="spheres-designs__premium-link">Премиальные павильоны</a>
+      <a href="#" class="spheres-designs__classic-link">Классические конструкции</a>
+    </div>
+  </div>
+</section>
+      <section class="advice">
+  <div class="wrapper">
+    <div class="advice__box">
+      <span class="advice__number">01</span>
+      <span class="advice__title">Cовет</span>
+      <p class="advice__text">Мы стремимся предложить вам наилучшее арендное решение. Единственный способ достичь этой
+        цели
+        — это слушать вас.
+        Прислушайтесь к своим потребностям, обстоятельствам и задачам, которые привели к организации временного
+        пространства.
+        Расскажите нам о них и мы поможем с оптимальным решением.</p>
+      <p class="advice__text">Наша команда менеджеров по проектам состоит из нескольких человек с технологическим
+        опытом, и
+        как команда они накопили
+        огромный опыт работы с аналогичными проектами. После знакомства с вашими идеями и вашими потребностями они
+        составят
+        профиль требований, который будет содержать все возможные факторы, которые необходимо учитывать при выборе
+        наилучшего
+        решения. Наша команда проконсультирует вас на каждом этапе пути,
+        и вы можете быть уверены, что они всегда на расстоянии одного телефонного звонка.</p>
+    </div>
+    <div class="advice__box">
+      <span class="advice__number">02</span>
+      <span class="advice__title">Планирование</span>
+      <p class="advice__text">У нас есть более чем 15-летний опыт планирования доставки и строительства временных
+        тентовых
+        конструкций. Этот опыт в
+        сочетании с превосходным знанием продукта нашей командой и консультационным опытом гарантирует высокую
+        безопасность
+        и
+        эффективность решений для вашего проекта.</p>
+    </div>
+    <div class="advice__box">
+      <span class="advice__number">03</span>
+      <span class="advice__title">Монтаж</span>
+      <p class="advice__text">Как только этап планирования будет завершен, мы договоримся с вами о дате установки в
+        согласованные сроки. Наши
+        обученные строители и опытные менеджеры обеспечат точнуют установку и передачу вам объекта. Располагая широкими
+        возможностями по дополнительным решениям мы предоставим вам дополнительное оборудование, такое как отопление,
+        кондиционирование, освещение и так далее. Мы будем с вами на всех этапах, пока ваша конструкция не будет сдана
+        под
+        ключ
+        и готова к эксплуатации.</p>
+    </div>
+  </div>
+  <aside class="advice__nav">
+    <div class="advice__nav-inner-box">
+      <a href="#" class="advice__link">
+        <span class="advice__link-number">01</span>
+        <span class="advice__link-title">Совет</span>
+      </a>
+      <a href="#" class="advice__link">
+        <span class="advice__link-number">02</span>
+        <span class="advice__link-title">Планирование</span>
+      </a>
+      <a href="#" class="advice__link">
+        <span class="advice__link-number">03</span>
+        <span class="advice__link-title">Монтаж</span>
+      </a>
+    </div>
+  </aside>
+</section>
+      <section class="contacts" data-animation-container>
+ <div class="contacts__bg"></div>
+ <div class="contacts__block padding-top">
+  <div class="contacts__box fade-left" data-animation-child>
+   <div class="contacts__block-bg"></div>
+   <div class="wrapper" data-animation-child>
+    <div class="contacts__inner-box">
+     <a href="tel:+74955029900" class="contacts__item"><img src="img/main/Phone_white.svg" alt="">+7 (495)
+      502-99-00</a>
+     <a href="mailto:tent@tent.ru" class="contacts__item"><img src="img/main/Mail.svg" alt="">tent@tent.ru</a>
+     <a href="#" class="contacts__item"><img src="img/main/geo.svg" alt="">Москва, ул. Бибиревская 4</a>
+     <a href="#" class="contacts__item"><img src="img/main/Telegram_white.svg" alt="">Telegram</a>
+     <a href="#" class="contacts__item"><img src="img/main/whatsapp.svg" alt="">WhatsApp</a>
+    </div>
+   </div>
+  </div>
+  <div class="contacts__feedback-block fade-right" data-animation-child data-animation-delay=".3s">
+   <div class="contacts__feedback-content">
+    <span class="contacts__feedback-title">Заинтересовали наши решения?</span>
+    <span class="contacts__feedback-subtitle">Напишите нам и мы ответим на все вопросы</span>
+    <a href="#" class="contacts__feedback-link">Связаться с нами</a>
+   </div>
+  </div>
  </div>
+
 </section>
     </div>
   </main>
@@ -502,9 +600,10 @@
  </div>
 </footer>
 </body>
-<script src="./js/menu.js?_v=20230327132458"></script>
-<script src="./js/slider.js?_v=20230327132458"></script>
-<script src="./js/animation.js?_v=20230327132458"></script>
-<script src="./js/spheres.js?_v=20230327132458"></script>
+<script src="./js/scrollAside.js?_v=20230329145604"></script>
+<script src="./js/menu.js?_v=20230329145604"></script>
+<script src="./js/slider.js?_v=20230329145604"></script>
+<script src="./js/animation.js?_v=20230329145604"></script>
+<script src="./js/spheres.js?_v=20230329145604"></script>
 
 </html>

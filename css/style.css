@@ -4,6 +4,7 @@
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -844,7 +845,7 @@ a {
   display: flex;
   flex-direction: column;
   color: black;
-  transition: all 0.3s;
+  transition: box-shadow 0.3s;
   border: 1px solid rgb(215, 215, 215);
 }
 
@@ -1435,6 +1436,10 @@ a {
 .contacts {
   position: relative;
   min-height: 700px;
+}
+
+.contacts.why {
+  min-height: 520px;
 }
 
 .contacts__bg {
@@ -2638,6 +2643,8 @@ a {
 }
 
 .spheres-page-nav .description__feedback {
+  position: absolute;
+  right: 0;
   color: #283755;
   bottom: 0;
   top: auto;
@@ -2764,6 +2771,295 @@ a {
   border-radius: 40px;
   font-weight: 600;
   color: black;
+}
+
+.spheres-optimization__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.04em;
+  max-width: 840px;
+}
+
+.spheres-optimization__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 840px;
+}
+
+.advice {
+  background: #F6F6F6;
+  position: relative;
+}
+
+.advice .wrapper {
+  padding: 60px 0;
+}
+
+.advice__box {
+  max-width: 1060px;
+  position: relative;
+}
+
+.advice__box:not(:last-child) {
+  margin-bottom: 75px;
+}
+
+.advice__box:not(:last-child):after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #A4A4A4;
+  bottom: -35px;
+}
+
+.advice__number {
+  font-size: 18px;
+  color: #20C2FF;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.advice__title {
+  font-size: 36px;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.advice__text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.advice__nav {
+  min-width: 500px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: #283755;
+}
+
+.advice__nav-inner-box {
+  padding: 60px;
+  top: 0;
+}
+
+.advice__link {
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 30px;
+  padding-left: 15px;
+}
+
+.advice__link.active {
+  color: white;
+}
+
+.advice__link::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 2px;
+  left: 0;
+  background-color: hsla(0deg, 0%, 100%, 0.2);
+  transition: all 0.2s;
+}
+
+.advice__link.active::before {
+  width: 4px;
+  background-color: #20C2FF;
+}
+
+.advice__link-number {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 5px 0;
+}
+
+.advice__link-title {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0 0 5px 0;
+  max-width: 360px;
+}
+
+.why__box {
+  max-width: 1060px;
+}
+
+.why__box:first-child {
+  margin-bottom: 120px;
+}
+
+.why__box:last-child {
+  padding-bottom: 90px;
+}
+
+.why__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.04em;
+}
+
+.why__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.why-review {
+  position: relative;
+  padding-bottom: 120px;
+}
+
+.why-review__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.04em;
+}
+
+.why-review__decor {
+  min-height: 640px;
+  width: 42%;
+  z-index: 1;
+  position: absolute;
+  background-color: #283755;
+}
+
+.why-review__photo {
+  padding-left: 0%;
+  position: relative;
+  z-index: 2;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.why-review__photo img {
+  display: block;
+}
+
+.why-review__photo:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 8px;
+  background: #20C2FF;
+}
+
+.why-review__info {
+  display: flex;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  min-height: 520px;
+  position: relative;
+  top: 40px;
+}
+
+.why-review__quote {
+  max-width: 620px;
+  position: relative;
+  top: -23px;
+}
+
+.why-review__quote-text {
+  position: relative;
+  font-size: 28px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  margin-bottom: 55px;
+  padding-left: 63px;
+  max-width: 425px;
+}
+
+.why-review__quote-text::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/main/quote.png);
+  top: -17px;
+  left: 0;
+  width: 33px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.why-review__quote-text::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/main/quote.png);
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  bottom: -20px;
+  right: -57px;
+  width: 33px;
+  height: 30px;
+  background-size: contain;
+}
+
+.why-review__name {
+  position: relative;
+  padding-left: 63px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.why-review__name:before {
+  position: absolute;
+  left: 63px;
+  top: -20px;
+  width: 60%;
+  height: 1px;
+  background: rgba(8, 26, 61, 0.24);
+  content: "";
+}
+
+.why-review__position {
+  font-size: 18px;
+  line-height: 24px;
+  color: #3E4145;
+  padding-left: 63px;
+  max-width: 425px;
+  margin-bottom: 45px;
+}
+
+.why-review__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  max-width: 600px;
+}
+
+.why-review__high-level {
+  padding-left: 15px;
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 45px 0 25px 0;
+  max-width: 520px;
+}
+
+.why-review__high-level:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background-color: #20C2FF;
+}
+
+.certificate-slider .swiper-slide img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 1920px) {
@@ -3115,7 +3411,7 @@ a {
   }
 
   .contacts {
-    min-height: 450px;
+    min-height: 510px;
   }
 
   .contacts__block {
@@ -4207,6 +4503,41 @@ a {
     flex-direction: column;
   }
 
+  .technical__tabs-top {
+    width: 100%;
+    padding: 0;
+  }
+
+  .technical__tabs-bottom {
+    flex-direction: column;
+  }
+
+  .technical__tabs-title {
+    font-size: 18px;
+  }
+
+  .technical__tabs-point {
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .technical__tabs-point.grid {
+    grid-template-columns: 150px 300px;
+  }
+
+  .technical__tabs-point::before {
+    left: 0;
+    width: 100%;
+  }
+
+  .technical__tabs-characteristic {
+    font-size: 14px;
+  }
+
+  .technical__tabs-detail {
+    font-size: 14px;
+  }
+
   .technical__link {
     width: 100%;
     height: 40px;
@@ -4231,7 +4562,7 @@ a {
 
 @media screen and (max-width: 600px) {
   .contacts {
-    min-height: 490px;
+    min-height: 530px;
   }
 
   .contacts__inner-box {

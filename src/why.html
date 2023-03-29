@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+@@include('html/common/head/head-2.html',{
+"title": "Почему мы?"
+})
+
+<body class="body">
+  @@include('html/common/cookies/cookies.html',{})
+  @@include('html/common/menu/menu.html',{})
+  @@include('html/common/header/header.html',{})
+  <main class="main main-bg">
+    <div class="decor-bg"></div>
+    <section class="description">
+      @@include('html/description/description-why.html', {})
+    </section>
+    @@include('html/why-page/why/why.html', {})
+    @@include('html/why-page/why-scroll/scroll.html', {})
+    @@include('html/main-page/clients/clients.html', {})
+    @@include('html/why-page/review/review.html', {})
+    <section class="cards">
+      @@include('html/cards/cards-why.html', {})
+    </section>
+    @@include('html/why-page/certificate/certificate.html', {})
+    @@include('html/why-page/contacts/contacts.html', {})
+  </main>
+  @@include('html/common/footer/footer.html',{})
+</body>
+<script src="./js/slider.js"></script>
+<script src="./js/menu.js"></script>
+<script src="./js/animation.js"></script>
+<script src="./js/scrollAside.js"></script>
+
+</html>
