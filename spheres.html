@@ -6,17 +6,17 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap&_v=20230329145604" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap&_v=20230329145604" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap&_v=20230329145604" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap&_v=20230329145604" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap&_v=20230330164747" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap&_v=20230330164747" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap&_v=20230330164747" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap&_v=20230330164747" rel="stylesheet">
  <link rel="shortcut icon" href="img/main/favicon-32x32.png" type="image/x-icon">
  <link rel="preload" as="image" href="./img/main/hero.png" />
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230329145604" />
- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230329145604"></script>
- <script src="js/jQuery2.2.0.js?_v=20230329145604"></script>
- <script src="js/ScrollAnimations.js?_v=20230329145604"></script>
- <link rel="stylesheet" href="css/style.min.css?_v=20230329145604">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230330164747" />
+ <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230330164747"></script>
+ <script src="js/jQuery2.2.0.js?_v=20230330164747"></script>
+ <script src="js/ScrollAnimations.js?_v=20230330164747"></script>
+ <link rel="stylesheet" href="css/style.min.css?_v=20230330164747">
  <title>Сферы</title>
 </head>
 
@@ -239,10 +239,10 @@
 </section>
     <div class="spheres-page-nav">
  <div class="wrapper">
-  <button class="spheres-page-nav__link active" onclick="openTab(event, 'description')">Описание</button>
+  <button class="spheres-page-nav__link active" onclick="openTab(event, 'description')"
+   id="defaultOpen">Описание</button>
   <button class="spheres-page-nav__link" onclick="openTab(event, 'designs')">Конструкции</button>
-  <button class="spheres-page-nav__link" onclick="openTab(event, 'recommendations')"
-   id="defaultOpen">Рекомендации</button>
+  <button class="spheres-page-nav__link" onclick="openTab(event, 'recommendations')">Рекомендации</button>
   <div class="description__feedback">
    <span class="description__feedback-question">Заинтересовали наши решения?</span>
    <p>Не стесняйтесь обращаться к нам за дополнительной информацией об аренде наших
@@ -252,7 +252,7 @@
  </div>
 </div>
     <div id="description" class="shperes-content">
-      <section class="addition">
+      <section class="addition addition-spheres">
   <div class="wrapper">
     <div class="addition__box" data-animation-container>
       <div class="addition__img fade-left" data-animation-child>
@@ -445,8 +445,10 @@
       <section class="advice">
   <div class="wrapper">
     <div class="advice__box">
-      <span class="advice__number">01</span>
-      <span class="advice__title">Cовет</span>
+      <div class="advice__top">
+        <span class="advice__number">01</span>
+        <span class="advice__title">Cовет</span>
+      </div>
       <p class="advice__text">Мы стремимся предложить вам наилучшее арендное решение. Единственный способ достичь этой
         цели
         — это слушать вас.
@@ -464,8 +466,9 @@
         и вы можете быть уверены, что они всегда на расстоянии одного телефонного звонка.</p>
     </div>
     <div class="advice__box">
-      <span class="advice__number">02</span>
-      <span class="advice__title">Планирование</span>
+      <div class="advice__top"><span class="advice__number">02</span>
+        <span class="advice__title">Планирование</span>
+      </div>
       <p class="advice__text">У нас есть более чем 15-летний опыт планирования доставки и строительства временных
         тентовых
         конструкций. Этот опыт в
@@ -475,8 +478,10 @@
         эффективность решений для вашего проекта.</p>
     </div>
     <div class="advice__box">
-      <span class="advice__number">03</span>
-      <span class="advice__title">Монтаж</span>
+      <div class="advice__top">
+        <span class="advice__number">03</span>
+        <span class="advice__title">Монтаж</span>
+      </div>
       <p class="advice__text">Как только этап планирования будет завершен, мы договоримся с вами о дате установки в
         согласованные сроки. Наши
         обученные строители и опытные менеджеры обеспечат точнуют установку и передачу вам объекта. Располагая широкими
@@ -600,10 +605,10 @@
  </div>
 </footer>
 </body>
-<script src="./js/scrollAside.js?_v=20230329145604"></script>
-<script src="./js/menu.js?_v=20230329145604"></script>
-<script src="./js/slider.js?_v=20230329145604"></script>
-<script src="./js/animation.js?_v=20230329145604"></script>
-<script src="./js/spheres.js?_v=20230329145604"></script>
-
+<script src="./js/scrollAside.js?_v=20230330164747"></script>
+<script src="./js/menu.js?_v=20230330164747"></script>
+<script src="./js/slider.js?_v=20230330164747"></script>
+<script src="./js/animation.js?_v=20230330164747"></script>
+<script src="./js/spheres.js?_v=20230330164747"></script>
+<script src="./js/advice.js?_v=20230330164747"></script>
 </html>

@@ -19,6 +19,33 @@
     line-height: 24px;
     max-width: 770px;
   }
+
+  @media screen and (max-width: 1300px) {
+    padding: 180px 0 180px 0;
+
+    &__title {
+      font-size: 42px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 150px 0 70px 0;
+
+    &__title {
+      font-family: 'Play';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+    }
+
+    &__text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
 }
 
 .shperes-content {

@@ -24,6 +24,17 @@
    font-size: 22px;
    letter-spacing: 0.02em;
    font-family: 'Play', sans-serif;
+   padding: 0 15px;
+  }
+ }
+
+ @media screen and (max-width: 768px) {
+  .wrapper {
+   padding: 0px;
+  }
+
+  .description__link {
+   padding: 0 15px;
   }
  }
 }
@@ -140,6 +151,19 @@
   @media screen and (max-width: 768px) {
    right: -50px;
    top: -1px;
+  }
+ }
+
+ &_50 {
+  max-width: none;
+  flex-basis: 48%;
+
+  .card__title {
+   font-family: 'Play', sans-serif;
+  }
+
+  .card__text {
+   padding-right: 30px;
   }
  }
 }

@@ -25,4 +25,45 @@
  &__text {
   font-size: 18px;
  }
+
+ @media screen and (max-width: 1300px) {
+  .wrapper {
+   padding: 25px 15px;
+  }
+
+  &__box:not(:last-child) {
+   margin-bottom: 40px;
+  }
+
+  &__title {
+   font-size: 26px;
+   line-height: 24px;
+   margin-bottom: 25px;
+  }
+
+  &__text {
+   font-size: 16px;
+  }
+ }
+
+ @media screen and (max-width: 768px) {
+  .wrapper {
+   padding: 15px 15px;
+  }
+
+  &__box:not(:last-child) {
+   margin-bottom: 20px;
+  }
+
+  &__title {
+   font-size: 20px;
+   line-height: 24px;
+   margin-bottom: 15px;
+  }
+
+  &__text {
+   font-size: 14px;
+   line-height: 16px;
+  }
+ }
 }

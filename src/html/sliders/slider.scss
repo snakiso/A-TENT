@@ -53,6 +53,25 @@
             width: 170px;
             height: 70px;
         }
+
+        .slide-title {
+            padding: 15px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.03em;
+            max-width: 265px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .swiper-slide {
+                border: 1px solid #D7D7D7;
+            }
+
+            img {
+                border-bottom: 5px solid $color-blue;
+            }
+        }
     }
 
     .swiper-button-disabled {
@@ -180,10 +199,14 @@
     transition-delay: .2s;
 
     @media screen and (max-width: 768px) {
-        bottom: 10px;
-        left: 10px;
+        position: relative;
+        color: black;
         font-size: 14px;
         line-height: 16px;
+        bottom: auto;
+        left: auto;
+        padding: 15px;
+        margin-top: 0;
     }
 }
 

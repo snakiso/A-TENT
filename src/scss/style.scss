@@ -26,6 +26,9 @@ body {
 .main-bg {
   background: url(../img/designs/designs-bg.png);
   background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+      background: none;
+    }
 }
 
 .decor-bg {
@@ -36,7 +39,7 @@ body {
 }
 
 .padding-top {
-  padding-top: $main-padding !important;
+  padding-top: $main-padding  !important;
 
   @media screen and (max-width: 1300px) {
     padding-top: $main-padding * 0.375 !important;
@@ -44,7 +47,7 @@ body {
 }
 
 .padding-bottom {
-  padding-bottom: $main-padding !important;
+  padding-bottom: $main-padding  !important;
 
   @media screen and (max-width: 1300px) {
     padding-bottom: $main-padding * 0.375 !important;
@@ -122,3 +125,4 @@ a {
 @import '../html/why-page/why/why';
 @import '../html/why-page/review/why-review';
 @import '../html/why-page/certificate/certificate';
+@import '../html/infrastructure-page/infrastucture';

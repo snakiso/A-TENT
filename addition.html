@@ -6,17 +6,17 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap&_v=20230329145604" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap&_v=20230329145604" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap&_v=20230329145604" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap&_v=20230329145604" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap&_v=20230330164747" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap&_v=20230330164747" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap&_v=20230330164747" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap&_v=20230330164747" rel="stylesheet">
  <link rel="shortcut icon" href="img/main/favicon-32x32.png" type="image/x-icon">
  <link rel="preload" as="image" href="./img/main/hero.png" />
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230329145604" />
- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230329145604"></script>
- <script src="js/jQuery2.2.0.js?_v=20230329145604"></script>
- <script src="js/ScrollAnimations.js?_v=20230329145604"></script>
- <link rel="stylesheet" href="css/style.min.css?_v=20230329145604">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230330164747" />
+ <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230330164747"></script>
+ <script src="js/jQuery2.2.0.js?_v=20230330164747"></script>
+ <script src="js/ScrollAnimations.js?_v=20230330164747"></script>
+ <link rel="stylesheet" href="css/style.min.css?_v=20230330164747">
  <title>Дополнительные возможности</title>
 </head>
 
@@ -254,8 +254,8 @@
   </section>
   <section class="addition padding-top">
    <div class="wrapper">
-    <div class="addition__box">
- <div class="addition-slider">
+    <div class="addition__box" data-animation-container>
+ <div class="addition-slider fade-left" data-animation-child>
   <div class="swiper-wrapper">
    <div class="swiper-slide">
     <img src="img/addition/1.png" alt="">
@@ -273,15 +273,15 @@
   </div>
  </div>
  <div class="addition-content">
-  <h3 class="addition__title">Стекляные или
+  <h3 class="addition__title card-up" data-animation-child>Стекляные или
    пластиковые панели</h3>
-  <p class="addition__text">Существует несколько видов ПВХ-полотна для крыш конструкций, позволяющего защитить
+  <p class="addition__text card-up-2" data-animation-child>Существует несколько видов ПВХ-полотна для крыш конструкций, позволяющего защитить
    участников мероприятия от осадков,
    снизить затраты на кондиционирование и отопление.</p>
  </div>
 </div>
-    <div class="addition__box reverse">
-  <div class="addition-slider">
+    <div class="addition__box reverse" data-animation-container>
+  <div class="addition-slider fade-right" data-animation-child>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <img src="img/addition/2.png" alt="">
@@ -299,14 +299,14 @@
     </div>
   </div>
   <div class="addition-content">
-    <h3 class="addition__title">Пол</h3>
-    <p class="addition__text">Для всех серий применяются различные системы пола, позволяющие устанавливать конструкции
+    <h3 class="addition__title card-up" data-animation-child>Пол</h3>
+    <p class="addition__text card-up-2" data-animation-child>Для всех серий применяются различные системы пола, позволяющие устанавливать конструкции
       на разных площадках с разным
       видом крепления.</p>
   </div>
 </div>
-    <div class="addition__box">
-  <div class="addition-slider">
+    <div class="addition__box" data-animation-container>
+  <div class="addition-slider fade-left" data-animation-child>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <img src="img/addition/3.png" alt="">
@@ -324,14 +324,14 @@
     </div>
   </div>
   <div class="addition-content">
-    <h3 class="addition__title">Входные группы</h3>
-    <p class="addition__text">Важная часть любой тентовой конструкции – это входная группа. Мы предлагаем только
+    <h3 class="addition__title card-up" data-animation-child>Входные группы</h3>
+    <p class="addition__text card-up-2" data-animation-child>Важная часть любой тентовой конструкции – это входная группа. Мы предлагаем только
       качественные дверные системы,
       разработанные специально для тентовых конструкций.</p>
   </div>
 </div>
-    <div class="addition__box reverse">
-  <div class="addition-slider">
+    <div class="addition__box reverse" data-animation-container>
+  <div class="addition-slider fade-right" data-animation-child>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <img src="img/addition/4.png" alt="">
@@ -349,14 +349,14 @@
     </div>
   </div>
   <div class="addition-content">
-    <h3 class="addition__title">Панорамные панели MANHATTAN</h3>
-    <p class="addition__text">Конструкции серии “MANHATTAN” – это высококлассные павильоны для мероприятий
+    <h3 class="addition__title card-up" data-animation-child>Панорамные панели MANHATTAN</h3>
+    <p class="addition__text card-up-2" data-animation-child>Конструкции серии “MANHATTAN” – это высококлассные павильоны для мероприятий
       премиум-класса, где качество и уникальность
       чувствуются в каждой детали.</p>
   </div>
 </div>
-    <div class="addition__box">
- <div class="addition-slider">
+    <div class="addition__box" data-animation-container>
+ <div class="addition-slider fade-left" data-animation-child>
   <div class="swiper-wrapper">
    <div class="swiper-slide">
     <img src="img/addition/5.png" alt="">
@@ -374,13 +374,13 @@
   </div>
  </div>
  <div class="addition-content">
-  <h3 class="addition__title">Тканевая драпировка</h3>
-  <p class="addition__text">Чтобы павильон стал более светлым и просторным, компания «А-ТЕНТ» предлагает для внутреннего декорирования специальную
+  <h3 class="addition__title card-up" data-animation-child>Тканевая драпировка</h3>
+  <p class="addition__text card-up-2" data-animation-child>Чтобы павильон стал более светлым и просторным, компания «А-ТЕНТ» предлагает для внутреннего декорирования специальную
   белую ткань</p>
  </div>
 </div>
-    <div class="addition__box reverse">
-  <div class="addition-slider">
+    <div class="addition__box reverse" data-animation-container>
+  <div class="addition-slider fade-right" data-animation-child>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <img src="img/addition/6.png" alt="">
@@ -398,15 +398,15 @@
     </div>
   </div>
   <div class="addition-content">
-    <h3 class="addition__title">Оборудование по кондиционировнию
+    <h3 class="addition__title card-up" data-animation-child>Оборудование по кондиционировнию
       и вентиляции</h3>
-    <p class="addition__text">Конструкции серии “MANHATTAN” – это высококлассные павильоны для мероприятий
+    <p class="addition__text card-up-2" data-animation-child>Конструкции серии “MANHATTAN” – это высококлассные павильоны для мероприятий
       премиум-класса, где качество и уникальность
       чувствуются в каждой детали.</p>
   </div>
 </div>
-    <div class="addition__box">
-  <div class="addition-slider">
+    <div class="addition__box" data-animation-container>
+  <div class="addition-slider fade-left" data-animation-child>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <img src="img/addition/7.png" alt="">
@@ -424,13 +424,72 @@
     </div>
   </div>
   <div class="addition-content">
-    <h3 class="addition__title">Тепловое оборудование</h3>
-    <p class="addition__text">Комплексное энергообеспечение и коммутация от
+    <h3 class="addition__title card-up" data-animation-child>Тепловое оборудование</h3>
+    <p class="addition__text card-up-2" data-animation-child>Комплексное энергообеспечение и коммутация от
       “А-ТЕНТ” – оптимальное и надежное решение для мероприятий</p>
   </div>
 </div>
    </div>
   </section>
+  <section class="slider">
+ <div class="wrapper padding-top padding-bottom">
+  <div class="project-slider">
+   <div class="swiper-wrapper">
+    <div class="swiper-slide">
+     <img src="img/addition/1.png" alt="">
+     <span class="slide-title ff-play">Стекляные или
+      пластиковые панели</span>
+     <p class="project-slider-text">Существует несколько видов ПВХ-полотна для крыш конструкций, позволяющего защитить
+      участников мероприятия от осадков,
+      снизить затраты на кондиционирование и отопление</p>
+    </div>
+    <div class="swiper-slide">
+     <img src="img/addition/2.png" alt="">
+     <span class="slide-title ff-play">Пол</span>
+     <p class="project-slider-text">Для всех серий применяются различные системы пола, позволяющие устанавливать
+      конструкции на разных площадках с разным
+      видом крепления</p>
+    </div>
+    <div class="swiper-slide">
+     <img src="img/addition/3.png" alt="">
+     <span class="slide-title ff-play">Входные группы</span>
+     <p class="project-slider-text">Важная часть любой тентовой конструкции – это входная группа. Мы предлагаем только
+      качественные дверные системы,
+      разработанные специально для тентовых конструкций</p>
+    </div>
+    <div class="swiper-slide">
+     <img src="img/addition/4.png" alt="">
+     <span class="slide-title ff-play">Панорамные панели MANHATTAN</span>
+     <p class="project-slider-text">Конструкции серии “MANHATTAN” – это высококлассные павильоны для мероприятий
+      премиум-класса, где качество и уникальность
+      чувствуются в каждой детали</p>
+    </div>
+    <div class="swiper-slide">
+     <img src="img/addition/5.png" alt="">
+     <span class="slide-title ff-play">Тканевая драпировка</span>
+     <p class="project-slider-text">Чтобы павильон стал более светлым и просторным, компания «А-ТЕНТ» предлагает для
+      внутреннего декорирования специальную
+      белую ткань</p>
+    </div>
+    <div class="swiper-slide">
+     <img src="img/addition/6.png" alt="">
+     <span class="slide-title ff-play">Оборудование по кондиционировнию
+      и вентиляции</span>
+     <p class="project-slider-text">Конструкции серии “MANHATTAN” – это высококлассные павильоны для мероприятий
+      премиум-класса, где качество и уникальность
+      чувствуются в каждой детали</p>
+    </div>
+    <div class="swiper-slide">
+     <img src="img/addition/7.png" alt="">
+     <span class="slide-title ff-play">Тепловое оборудование</span>
+     <p class="project-slider-text">Комплексное энергообеспечение и коммутация от
+      “А-ТЕНТ” – оптимальное и надежное решение для мероприятий</p>
+    </div>
+   </div>
+  </div>
+ </div>
+ </div>
+</section>
  </main>
  <footer class="footer">
  <div class="wrapper">
@@ -500,8 +559,8 @@
  </div>
 </footer>
 </body>
-<script src="./js/menu.js?_v=20230329145604"></script>
-<script src="./js/slider.js?_v=20230329145604"></script>
-<script src="./js/animation.js?_v=20230329145604"></script>
+<script src="./js/menu.js?_v=20230330164747"></script>
+<script src="./js/slider.js?_v=20230330164747"></script>
+<script src="./js/animation.js?_v=20230330164747"></script>
 
 </html>

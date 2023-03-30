@@ -26,4 +26,48 @@
   top: auto;
   min-height: 280px;
  }
+
+ @media screen and (max-width: 1300px) {
+
+  &__link {
+   font-size: 16px;
+   margin-right: 40px;
+  }
+
+  .description__feedback {
+   right: 15px;
+   max-width: 330px;
+  }
+ }
+
+ @media screen and (max-width: 768px) {
+  min-height: 230px;
+  display: flex;
+  align-items: flex-end;
+
+  .wrapper {
+   margin: 0;
+   width: 100%;
+   bottom: 10px;
+   display: flex;
+   justify-content: space-between;
+  }
+
+  .description__feedback {
+   right: 15px;
+   max-width: calc(100% - 30px);
+   bottom: 75px;
+   min-height: 200px;
+  }
+
+  &__link {
+   font-size: 14px;
+   padding: 10px 0 10px 0;
+   margin-right: 0px;
+
+   &.active {
+    border-bottom: 4px solid $color-blue;
+   }
+  }
+ }
 }

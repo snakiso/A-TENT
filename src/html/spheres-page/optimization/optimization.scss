@@ -15,4 +15,18 @@
   max-width: 840px;
  }
 
+ @media screen and (max-width: 768px) {
+  &__title {
+   font-family: 'Play';
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 28px;
+   letter-spacing: 0.02em;
+  }
+
+  &__text {
+   font-size: 14px;
+   line-height: 16px;
+  }
+ }
 }

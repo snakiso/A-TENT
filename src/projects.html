@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+@@include('html/common/head/head.html',{
+"title": "Проекты"
+})
+
+<body class="body">
+  @@include('html/common/cookies/cookies.html',{})
+  @@include('html/common/menu/menu.html',{})
+  @@include('html/common/header/header.html',{})
+  <main class="main main-bg">
+    <div class="decor-bg"></div>
+    <section class="description">
+      @@include('html/description/description-projects.html', {})
+    </section>
+    <section class="cards padding-bottom">
+      @@include('html/cards/cards-projects.html', {})
+    </section>
+  </main>
+  @@include('html/common/footer/footer.html',{})
+</body>
+
+<script src="./js/menu.js"></script>
+<script src="./js/animation.js"></script>
+
+</html>

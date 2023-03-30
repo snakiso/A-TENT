@@ -40,17 +40,107 @@
   letter-spacing: 0.04em;
  }
 
- &__text{
+ &__text {
   font-size: 24px;
   font-weight: 500;
   margin-top: 15px;
  }
 
- &__link{
+ &__link {
+  position: relative;
   margin-top: 60px;
   background-color: $color-blue;
   padding: 16px 28px;
   border-radius: 40px;
   font-weight: 600;
+  transition: all .2s;
+
+  &:after {
+   position: absolute;
+   content: '';
+   width: 8px;
+   height: 8px;
+   border-bottom: 2px solid white;
+   border-right: 2px solid white;
+   transform: rotate(-45deg);
+   top: 21px;
+   right: 30px;
+   opacity: 0;
+   transition: all .2s;
+  }
+
+  &:hover {
+   padding: 16px 50px 16px 28px;
+
+   &::after {
+    opacity: 1;
+   }
+  }
+ }
+
+ @media screen and (max-width: 1300px) {
+
+  background-size: cover;
+
+  &__circle {
+   width: 700px;
+   height: 700px;
+  }
+
+  &__content {
+   color: #081A3D;
+   max-width: 520px;
+  }
+
+  &__title {
+   font-size: 140px;
+  }
+
+  &__subtitle {
+   font-size: 26px;
+  }
+
+  &__text {
+   font-size: 20px;
+  }
+ }
+
+ @media screen and (max-width: 768px) {
+
+  &__circle {
+   background: none;
+   box-shadow: none;
+   top: 0;
+   height: fit-content;
+   width: fit-content;
+  }
+
+  &__content {
+   padding: 40px 0 100px 0;
+   color: #081A3D;
+   max-width: 290px;
+   position: relative;
+   transform: none;
+   top: 0;
+  }
+
+  &__title {
+   font-size: 100px;
+  }
+
+  &__subtitle {
+   font-size: 20px;
+   text-align: center;
+  }
+
+  &__text {
+   font-size: 16px;
+   text-align: center;
+  }
+
+  &__link {
+   font-size: 14px;
+   margin-top: 45px;
+  }
  }
 }

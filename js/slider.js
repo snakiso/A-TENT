@@ -86,6 +86,23 @@ var swiper3 = new Swiper(".addition-slider", {
  },
 });
 
+const swiper5 = new Swiper('.addition-mobile-slider', {
+ navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+ },
+ slidesPerView: 1,
+ spaceBetween: 30,
+ autoWidth: false,
+ freeMode: false,
+ breakpoints: {
+  768: {
+   slidesPerView: 'auto',
+   freeMode: true,
+  }
+ }
+});
+
 const swiper4 = new Swiper('.design-slider', {
  navigation: {
   nextEl: '.swiper-button-next',

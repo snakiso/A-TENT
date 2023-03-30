@@ -48,5 +48,46 @@
   line-height: 24px;
  }
 
+ @media screen and (max-width: 1300px) {
+  background: none;
 
+  &__container {
+   grid-template-columns: 420px 420px;
+  }
+
+  &__title {
+   font-size: 32px
+  }
+
+  &__subtitle {
+   font-size: 20px;
+  }
+
+  &__text {
+   font-size: 16px;
+  }
+ }
+
+ @media screen and (max-width: 900px) {
+  &__container {
+   display: block;
+  }
+
+  &__title {
+   font-family: 'Play';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 28px;
+   letter-spacing: 0.02em;
+  }
+
+  &__subtitle {
+   font-size: 20px;
+  }
+
+  &__text {
+   font-size: 14px;
+  }
+ }
 }
