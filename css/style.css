@@ -30,6 +30,10 @@ body {
   width: 100%;
 }
 
+.news-card .decor-bg {
+  height: 550px;
+}
+
 .padding-top {
   padding-top: 120px !important;
 }
@@ -407,18 +411,15 @@ a {
   color: #283755;
   margin-bottom: 20px;
   transition: all 0.2s;
-}
-
-.menu__subpoint a:hover {
-  text-decoration: underline;
-}
-
-.menu__subpoint span {
   display: flex;
   align-items: center;
   color: #646464;
   -moz-column-gap: 15px;
        column-gap: 15px;
+}
+
+.menu__subpoint a:hover {
+  text-decoration: underline;
 }
 
 .menu__subpoint::before {
@@ -1844,6 +1845,10 @@ a {
   margin-top: 50px;
 }
 
+.description__img img {
+  width: 100%;
+}
+
 .cards__box {
   display: flex;
   flex-wrap: wrap;
@@ -1934,6 +1939,19 @@ a {
 
 .card_50 .card__text {
   padding-right: 30px;
+}
+
+.card__album {
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__count {
+  color: #3E4145;
+  font-size: 18px;
+  font-size: 16px;
 }
 
 .card-text-margin {
@@ -2221,6 +2239,10 @@ a {
   transform: rotate(180deg) translate(65%, 50%);
 }
 
+.slider-solutions {
+  display: none;
+}
+
 .interest {
   background-color: #F6F6F6;
 }
@@ -2262,6 +2284,10 @@ a {
 
 .interest__item:hover {
   color: #20C2FF;
+}
+
+.addition .project-slider {
+  display: none;
 }
 
 .addition__box {
@@ -2328,7 +2354,7 @@ a {
   background-color: rgba(8, 26, 61, 0.36);
 }
 
-.addition-mobile-slider {
+.addition-slider-mobile {
   display: none;
 }
 
@@ -3176,7 +3202,7 @@ a {
   font-size: 18px;
   line-height: 24px;
   color: #081A3D;
-  max-width: 1040p;
+  max-width: 1040px;
 }
 
 .infrastructure__subtitle {
@@ -3185,6 +3211,51 @@ a {
   line-height: 50px;
   letter-spacing: 0.04em;
   color: #081A3D;
+}
+
+.news-content {
+  max-width: 100%;
+  margin: 0;
+}
+
+.news-content .design-slider {
+  padding-top: 0;
+}
+
+.news-content .description__title {
+  max-width: 860px;
+}
+
+.news-content .description__text {
+  max-width: 100%;
+  margin-top: 50px;
+}
+
+.news-content__back {
+  color: black;
+  margin-top: 50px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.news-content__back img {
+  margin-right: 10px;
+}
+
+.contacts-us {
+  display: flex;
+}
+
+#map {
+  min-height: 100vh;
+  max-width: 700px;
+}
+
+.map-block {
+  flex-basis: 40%;
+  position: relative;
+  min-height: 100vh;
 }
 
 @media screen and (max-width: 1920px) {
@@ -3562,6 +3633,123 @@ a {
   .we-offer__text {
     font-size: 16px;
   }
+
+  .why__title {
+    font-size: 34px;
+  }
+
+  .why__text {
+    font-size: 16px;
+  }
+
+  .why__box:first-child {
+    margin-bottom: 80px;
+  }
+
+  .why__box:last-child {
+    padding-bottom: 60px;
+  }
+
+  .why-review {
+    padding-bottom: 180px;
+  }
+
+  .why-review__decor {
+    width: 65%;
+  }
+
+  .why-review__info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-review__photo {
+    max-width: 600px;
+    margin-left: 25%;
+  }
+
+  .why-review__photo img {
+    width: 100%;
+  }
+
+  .why-review__quote-text {
+    font-size: 24px;
+    max-width: 380px;
+    margin: 0 auto 55px auto;
+  }
+
+  .why-review__name {
+    font-size: 18px;
+    margin: 0 auto 5px auto;
+    max-width: 400px;
+  }
+
+  .why-review__position {
+    font-size: 16px;
+    max-width: 400px;
+    margin: 0 auto 45px auto;
+  }
+
+  .why-review__quote {
+    top: 80px;
+    max-width: 100%;
+  }
+
+  .why-review__text {
+    max-width: 100%;
+  }
+
+  .why-review__high-level {
+    font-size: 20px;
+    max-width: 100%;
+  }
+
+  .infrastructure__title {
+    font-size: 42px;
+  }
+
+  .infrastructure__text {
+    font-size: 16px;
+  }
+
+  .infrastructure__subtitle {
+    font-size: 36px;
+  }
+
+  .infrastructure__img {
+    display: block;
+  }
+
+  .infrastructure__img img {
+    width: 100%;
+  }
+
+  .infrastructure .wrapper {
+    padding: 0;
+  }
+
+  .infrastructure__title {
+    font-family: "Play";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    padding: 0 15px;
+  }
+
+  .infrastructure__text {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
+  .infrastructure__subtitle {
+    font-family: "Play";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    padding: 0 15px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -3591,6 +3779,14 @@ a {
     max-width: calc(100% - 30px);
     padding: 0;
     margin: auto;
+  }
+
+  .news-content {
+    max-width: 100%;
+  }
+
+  .news-content__back {
+    padding-left: 15px;
   }
 }
 
@@ -3723,17 +3919,18 @@ a {
     padding-bottom: 60px;
   }
 
-  .addition {
-    display: none;
-  }
-
   .addition__box {
     flex-direction: column;
     margin-bottom: 40px;
+    align-items: center;
   }
 
   .addition__box.reverse {
     flex-direction: column;
+  }
+
+  .addition-content {
+    max-width: 740px;
   }
 
   .addition__img img {
@@ -4556,13 +4753,28 @@ a {
     padding-top: 40px;
   }
 
+  .description .wrapper {
+    padding: 0;
+  }
+
   .description__link {
     font-size: 14px;
+    padding: 0 15px;
   }
 
   .description__title {
     font-family: "Play", sans-serif;
     font-weight: 700;
+    padding-left: 15px;
+  }
+
+  .description__text {
+    padding: 0 15px;
+  }
+
+  .description__feedback {
+    max-width: calc(100% - 30px);
+    margin: auto;
   }
 
   .cards__box {
@@ -4628,6 +4840,15 @@ a {
   .card__link::after {
     right: -50px;
     top: -1px;
+  }
+
+  .card__album .card__title {
+    display: block;
+    font-size: 16px;
+  }
+
+  .cards-none {
+    display: none;
   }
 
   .slider .project-slider .swiper-slide {
@@ -4704,6 +4925,10 @@ a {
     opacity: 0;
   }
 
+  .slider-solutions {
+    display: block;
+  }
+
   .slider-nav {
     display: none;
   }
@@ -4729,11 +4954,15 @@ a {
     top: 23px;
   }
 
+  .addition {
+    display: none;
+  }
+
   .addition-spheres .wrapper {
     padding: 40px 0 0 0;
   }
 
-  .addition-mobile-slider {
+  .addition-slider-mobile {
     display: block;
   }
 
@@ -5101,6 +5330,7 @@ a {
     font-size: 14px;
     line-height: 16px;
     color: white;
+    max-width: 265px;
   }
 
   .advice__text {
@@ -5113,6 +5343,73 @@ a {
     line-height: 16px;
     color: white;
     margin: 0 20px 0 15px;
+  }
+
+  .why__title {
+    font-family: "Play";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
+
+  .why__text {
+    font-size: 14px;
+  }
+
+  .why__box:first-child {
+    margin-bottom: 45px;
+  }
+
+  .why__box:last-child {
+    padding-bottom: 20px;
+  }
+
+  .why-review__title {
+    font-family: "Play";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
+
+  .why-review__photo {
+    max-width: 260px;
+    margin-left: 25%;
+  }
+
+  .why-review__photo::before {
+    width: 4px;
+  }
+
+  .why-review__photo img {
+    width: 100%;
+  }
+
+  .why-review__decor {
+    min-height: 306px;
+    top: 55px;
+  }
+
+  .why-review__quote-text {
+    font-size: 18px;
+    max-width: 275px;
+    margin: 0 0 40px 0;
+    padding-left: 40px;
+  }
+
+  .why-review__quote-text::before {
+    top: -25px;
+  }
+
+  .why-review__name {
+    font-size: 16px;
+    padding-left: 40px;
+  }
+
+  .why-review__position {
+    font-size: 14px;
+    padding-left: 40px;
   }
 }
 

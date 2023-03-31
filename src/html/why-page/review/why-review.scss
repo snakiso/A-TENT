@@ -138,4 +138,106 @@
   background-color: $color-blue;
  }
 
+ @media screen and (max-width: 1300px) {
+  padding-bottom: 180px;
+
+  &__decor {
+   width: 65%;
+  }
+
+  &__info {
+   flex-direction: column;
+   align-items: center;
+  }
+
+  &__photo {
+   max-width: 600px;
+   margin-left: 25%;
+
+   img {
+    width: 100%;
+   }
+  }
+
+  &__quote-text {
+   font-size: 24px;
+   max-width: 380px;
+   margin: 0 auto 55px auto;
+  }
+
+  &__name {
+   font-size: 18px;
+   margin: 0 auto 5px auto;
+   max-width: 400px;
+  }
+
+  &__position {
+   font-size: 16px;
+   max-width: 400px;
+   margin: 0 auto 45px auto;
+  }
+
+  &__quote {
+   top: 80px;
+   max-width: 100%;
+  }
+
+  &__text {
+   max-width: 100%;
+  }
+
+  &__high-level {
+   font-size: 20px;
+   max-width: 100%;
+  }
+ }
+
+ @media screen and (max-width: 768px) {
+  &__title {
+   font-family: 'Play';
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 28px;
+   letter-spacing: 0.02em;
+  }
+
+  &__photo {
+   max-width: 260px;
+   margin-left: 25%;
+
+   &::before {
+    width: 4px;
+   }
+
+   img {
+    width: 100%;
+   }
+  }
+
+  &__decor {
+   min-height: 306px;
+   top: 55px;
+  }
+
+  &__quote-text {
+   font-size: 18px;
+   max-width: 275px;
+   margin: 0 0 40px 0;
+   padding-left: 40px;
+
+   &::before {
+    top: -25px;
+   }
+  }
+
+  &__name {
+   font-size: 16px;
+   padding-left: 40px;
+  }
+
+  &__position {
+   font-size: 14px;
+   padding-left: 40px;
+  }
+ }
 }

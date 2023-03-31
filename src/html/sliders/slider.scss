@@ -330,8 +330,14 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+.slider-solutions {
+    display: none;
+}
 
+@media screen and (max-width: 768px) {
+    .slider-solutions {
+        display: block;
+    }
 
     .slider-nav {
         display: none;

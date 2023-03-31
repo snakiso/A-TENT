@@ -1,0 +1,32 @@
+<div class="map-block">
+ <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7dff6eb1-023d-4cff-b880-0cccd7a96b78"
+  type="text/javascript"></script>
+ <script>
+  var myMap;
+  ymaps.ready(init);
+  function init() {
+   myMap = new ymaps.Map('map', {
+    center: [55.785437, 37.705365],
+    zoom: 18,
+    controls: ['zoomControl',]
+   }, {
+    // searchControlProvider: 'yandex#search'
+   });
+   var myPlacemark = new ymaps.Placemark([55.785437, 37.705365], {
+    balloonContentHeader: '<img src="./img/placemarker.svg">',
+    balloonContentBody: "г.Москва, Малая Семёновская улица, 3А",
+    balloonContentFooter: "Мы ждем",
+    hintContent: "Офис PROJECTROOM"
+   }, {
+    iconLayout: 'default#image',
+    iconImageHref: "./img/placemarker.svg",
+    iconImageSize: [160, 120],
+    iconImageOffset: [-80, -120],
+   });
+   myMap.geoObjects.add(myPlacemark)
+   myMap.behaviors
+    .disable(['rightMouseButtonMagnifier', "scrollZoom"])
+  }        
+ </script>
+ <div id="map"></div>
+</div>

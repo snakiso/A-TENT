@@ -1,5 +1,6 @@
 .description {
   padding-top: 80px;
+
   &__link {
     color: $color-blue;
     font-weight: 500;
@@ -107,6 +108,10 @@
 
   &__img {
     margin-top: 50px;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -136,15 +141,29 @@
   .description {
     padding-top: 40px;
 
+    .wrapper {
+      padding: 0;
+    }
+
     &__link {
       font-size: 14px;
+      padding: 0 15px;
     }
 
     &__title {
       font-family: 'Play', sans-serif;
       font-weight: 700;
+      padding-left: 15px;
     }
 
+    &__text {
+      padding: 0 15px;
+    }
+
+    &__feedback {
+      max-width: calc(100% - 30px);
+      margin: auto;
+    }
   }
 }
 

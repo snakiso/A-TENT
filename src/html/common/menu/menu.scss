@@ -199,17 +199,14 @@
       color: $color-dark-blue ;
       margin-bottom: 20px;
       transition: all .2s;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    span {
       display: flex;
       align-items: center;
       color: #646464;
       column-gap: 15px;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
   }

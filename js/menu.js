@@ -34,7 +34,7 @@ for (let i = 0; i < mobileBtn.length; i++) {
     } else {
       removeClass()
       mobileArr[i].classList.toggle('active');
-      //checkClass()
+      checkClass()
     }
   })
 }
@@ -45,15 +45,15 @@ function removeClass(target) {
   }
 }
 
-// function checkClass() {
-//   for (let i = 0; i < mobileBtn.length; i++) {
-//     if (mobileArr[i].classList.contains('active')) {
-//       mobileBtn[i].style.maxHeight = '370px'
-//     } else {
-//       mobileBtn[i].style.maxHeight = '50px'
-//     }
-//   }
-// }
+function checkClass() {
+  for (let i = 0; i < mobileBtn.length; i++) {
+    if (mobileArr[i].classList.contains('active')) {
+      mobileBtn[i].style.maxHeight = '370px'
+    } else {
+      mobileBtn[i].style.maxHeight = '50px'
+    }
+  }
+}
 
 //COOKIES
 

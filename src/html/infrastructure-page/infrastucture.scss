@@ -11,7 +11,7 @@
   font-size: 18px;
   line-height: 24px;
   color: #081A3D;
-  max-width: 1040p
+  max-width: 1040px;
  }
 
  &__subtitle {
@@ -20,5 +20,56 @@
   line-height: 50px;
   letter-spacing: 0.04em;
   color: #081A3D;
+ }
+
+ @media screen and (max-width: 1300px) {
+  &__title {
+   font-size: 42px;
+  }
+
+  &__text {
+   font-size: 16px;
+  }
+
+  &__subtitle {
+   font-size: 36px;
+  }
+
+  &__img {
+   display: block;
+
+   img {
+    width: 100%;
+   }
+  }
+ }
+
+ @media screen and (max-width: 1300px) {
+  .wrapper {
+   padding: 0;
+  }
+
+  &__title {
+   font-family: 'Play';
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 32px;
+   letter-spacing: 0.02em;
+   padding: 0 15px;
+  }
+
+  &__text {
+   font-size: 14px;
+   padding: 0 15px;
+  }
+
+  &__subtitle {
+   font-family: 'Play';
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 28px;
+   letter-spacing: 0.02em;
+   padding: 0 15px;
+  }
  }
 }

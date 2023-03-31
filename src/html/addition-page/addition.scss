@@ -1,5 +1,9 @@
 .addition {
 
+ .project-slider {
+  display: none;
+ }
+
  &__box {
   display: flex;
   column-gap: 40px;
@@ -22,15 +26,21 @@
  }
 
  @media screen and (max-width: 1100px) {
-  display: none;
+
+
 
   &__box {
    flex-direction: column;
    margin-bottom: 40px;
+   align-items: center;
 
    &.reverse {
     flex-direction: column;
    }
+  }
+
+  &-content {
+   max-width: 740px;
   }
 
 
@@ -57,6 +67,10 @@
    line-height: 18px;
    padding: 0 15px;
   }
+ }
+
+ @media screen and (max-width: 768px) {
+  display: none;
  }
 }
 
@@ -108,7 +122,7 @@
  }
 }
 
-.addition-mobile-slider {
+.addition-slider-mobile {
  display: none;
 
  @media screen and (max-width: 768px) {

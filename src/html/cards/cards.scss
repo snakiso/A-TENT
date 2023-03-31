@@ -166,6 +166,29 @@
    padding-right: 30px;
   }
  }
+
+ &__album {
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+   .card__title {
+    display: block;
+    font-size: 16px;
+   }
+  }
+ }
+
+ &__count {
+  color: #3E4145;
+  font-size: 18px;
+
+  @media screen and (max-width: 768px) {}
+
+  font-size: 16px;
+ }
 }
 
 .card-text-margin {
@@ -222,6 +245,12 @@
  }
 
  @media screen and (max-width: 1300px) {
+  display: none;
+ }
+}
+
+@media screen and (max-width: 768px) {
+ .cards-none {
   display: none;
  }
 }

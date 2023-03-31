@@ -38,6 +38,12 @@ body {
   width: 100%;
 }
 
+.news-card{
+  .decor-bg{
+    height: 550px;
+  }
+}
+
 .padding-top {
   padding-top: $main-padding  !important;
 
@@ -126,3 +132,6 @@ a {
 @import '../html/why-page/review/why-review';
 @import '../html/why-page/certificate/certificate';
 @import '../html/infrastructure-page/infrastucture';
+@import '../html/description/news-card';
+@import '../html/contact-page/contact-us/contact-us';
+@import '../html/contact-page/map/map';

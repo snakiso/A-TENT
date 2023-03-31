@@ -1,0 +1,37 @@
+.news-content {
+ max-width: 100%;
+ margin: 0;
+
+ .design-slider{
+  padding-top: 0;
+ }
+
+ .description__title {
+  max-width: 860px;
+ }
+
+ .description__text {
+  max-width: 100%;
+  margin-top: 50px;
+ }
+
+ &__back {
+  color: black;
+  margin-top: 50px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+
+  img {
+   margin-right: 10px;
+  }
+ }
+
+ @media screen and (max-width: 1200px) {
+  max-width: 100%;
+
+  &__back{
+   padding-left: 15px;
+  }
+ }
+}
