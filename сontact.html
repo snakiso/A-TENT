@@ -6,17 +6,17 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap&_v=20230331155345" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap&_v=20230331155345" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap&_v=20230331155345" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap&_v=20230331155345" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap&_v=20230331162742" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap&_v=20230331162742" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap&_v=20230331162742" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap&_v=20230331162742" rel="stylesheet">
  <link rel="shortcut icon" href="img/main/favicon-32x32.png" type="image/x-icon">
  <link rel="preload" as="image" href="./img/main/hero.png" />
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230331155345" />
- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230331155345"></script>
- <script src="js/jQuery2.2.0.js?_v=20230331155345"></script>
- <script src="js/ScrollAnimations.js?_v=20230331155345"></script>
- <link rel="stylesheet" href="css/style.min.css?_v=20230331155345">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230331162742" />
+ <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230331162742"></script>
+ <script src="js/jQuery2.2.0.js?_v=20230331162742"></script>
+ <script src="js/ScrollAnimations.js?_v=20230331162742"></script>
+ <link rel="stylesheet" href="css/style.min.css?_v=20230331162742">
  <title>Свяжитесь с нами</title>
 </head>
 
@@ -230,17 +230,11 @@
   <main class="main main-bg">
     <div class="decor-bg"></div>
     <section class="contacts-us">
-      <div class="contact-us__container">
- <div data-animation-container>
-  <h4 data-animation-child class="contact-main__title">
-   КОНТАКТЫ</h4>
+      <div class="contact-us__content">
+ <div >
+  <h4 data-animation-child class="contact-us__title">КОНТАКТЫ</h4>
  </div>
  <div class="contact-main__contacts">
-  <div class="contact-main__adress">
-   <h4 class="">Адрес</h4>
-   <p class="">107023, Москва, Малая
-    Семеновская ул., 3Ас1</p>
-  </div>
   <div class="contact-main__phone">
    <h4 class="">Телефон</h4>
    <a href="tel:+74954695563">+7 (495) 469-55-63</a>
@@ -279,29 +273,29 @@
  </div>
 </div>
       <div class="map-block">
- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7dff6eb1-023d-4cff-b880-0cccd7a96b78&_v=20230331155345"
+ <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7dff6eb1-023d-4cff-b880-0cccd7a96b78&_v=20230331162742"
   type="text/javascript"></script>
  <script>
   var myMap;
   ymaps.ready(init);
   function init() {
    myMap = new ymaps.Map('map', {
-    center: [55.785437, 37.705365],
-    zoom: 18,
+    center: [55.881318, 37.600217],
+    zoom: 15,
     controls: ['zoomControl',]
    }, {
     // searchControlProvider: 'yandex#search'
    });
-   var myPlacemark = new ymaps.Placemark([55.785437, 37.705365], {
-    balloonContentHeader: '<img src="./img/placemarker.svg">',
-    balloonContentBody: "г.Москва, Малая Семёновская улица, 3А",
+   var myPlacemark = new ymaps.Placemark([55.881318, 37.600217], {
+    balloonContentHeader: '<img src="./img/contact/map.png">',
+    balloonContentBody: "",
     balloonContentFooter: "Мы ждем",
-    hintContent: "Офис PROJECTROOM"
+    hintContent: "Офис A-TENT"
    }, {
     iconLayout: 'default#image',
-    iconImageHref: "./img/placemarker.svg",
-    iconImageSize: [160, 120],
-    iconImageOffset: [-80, -120],
+    iconImageHref: "./img/contact/map.png",
+    iconImageSize: [90, 80],
+    iconImageOffset: [-80, 0],
    });
    myMap.geoObjects.add(myPlacemark)
    myMap.behaviors
@@ -380,8 +374,8 @@
  </div>
 </footer>
 </body>
-<script src="./js/menu.js?_v=20230331155345"></script>
-<script src="./js/slider.js?_v=20230331155345"></script>
-<script src="./js/animation.js?_v=20230331155345"></script>
+<script src="./js/menu.js?_v=20230331162742"></script>
+<script src="./js/slider.js?_v=20230331162742"></script>
+<script src="./js/animation.js?_v=20230331162742"></script>
 
 </html>
