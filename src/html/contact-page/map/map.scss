@@ -1,10 +1,28 @@
 #map {
- min-height: 100vh;
- max-width: 700px;
+ min-height: 100%;
+ width: 100%;
+ margin: 0;
+
+ @media screen and (max-width: 1300px) {
+  min-height: 500px;
+ }
+
+ @media screen and (max-width: 768px) {
+  min-height: 360px;
+ }
 }
 
 .map-block {
  flex-basis: 40%;
  position: relative;
  min-height: 100vh;
+
+ @media screen and (max-width: 1300px) {
+  flex-basis: 100%;
+  min-height: 500px;
+ }
+
+ @media screen and (max-width: 768px) {
+  min-height: 360px;
+ }
 }

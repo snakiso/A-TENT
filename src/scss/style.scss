@@ -26,9 +26,10 @@ body {
 .main-bg {
   background: url(../img/designs/designs-bg.png);
   background-repeat: no-repeat;
-    @media screen and (max-width: 768px) {
-      background: none;
-    }
+
+  @media screen and (max-width: 768px) {
+    background: none;
+  }
 }
 
 .decor-bg {
@@ -36,11 +37,28 @@ body {
   position: absolute;
   height: 820px;
   width: 100%;
+  z-index: -1;
 }
 
-.news-card{
-  .decor-bg{
+.news-card {
+  .decor-bg {
     height: 550px;
+  }
+}
+
+.main_contacts {
+  background: url(../img/contact/bg.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  .decor-bg {
+    height: 250px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .decor-bg {
+      height: 340px;
+    }
   }
 }
 

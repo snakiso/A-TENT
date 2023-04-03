@@ -6,22 +6,22 @@
   ymaps.ready(init);
   function init() {
    myMap = new ymaps.Map('map', {
-    center: [55.785437, 37.705365],
-    zoom: 18,
+    center: [55.881318, 37.600217],
+    zoom: 15,
     controls: ['zoomControl',]
    }, {
     // searchControlProvider: 'yandex#search'
    });
-   var myPlacemark = new ymaps.Placemark([55.785437, 37.705365], {
-    balloonContentHeader: '<img src="./img/placemarker.svg">',
-    balloonContentBody: "г.Москва, Малая Семёновская улица, 3А",
+   var myPlacemark = new ymaps.Placemark([55.881318, 37.600217], {
+    balloonContentHeader: '<img src="./img/contact/map.png">',
+    balloonContentBody: "",
     balloonContentFooter: "Мы ждем",
-    hintContent: "Офис PROJECTROOM"
+    hintContent: "Офис A-TENT"
    }, {
     iconLayout: 'default#image',
-    iconImageHref: "./img/placemarker.svg",
-    iconImageSize: [160, 120],
-    iconImageOffset: [-80, -120],
+    iconImageHref: "./img/contact/map.png",
+    iconImageSize: [90, 80],
+    iconImageOffset: [-80, 0],
    });
    myMap.geoObjects.add(myPlacemark)
    myMap.behaviors

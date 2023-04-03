@@ -5,10 +5,11 @@
 })
 
 <body class="body">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   @@include('html/common/cookies/cookies.html',{})
   @@include('html/common/menu/menu.html',{})
   @@include('html/common/header/header.html',{})
-  <main class="main main-bg">
+  <main class="main main-bg main_contacts">
     <div class="decor-bg"></div>
     <section class="contacts-us">
       @@include('html/contact-page/contact-us/contact.html',{})
@@ -17,6 +18,7 @@
   </main>
   @@include('html/common/footer/footer.html',{})
 </body>
+<script src="./js/form.js"></script>
 <script src="./js/menu.js"></script>
 <script src="./js/slider.js"></script>
 <script src="./js/animation.js"></script>
