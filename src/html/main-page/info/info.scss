@@ -4,7 +4,6 @@
  .wrapper {
   padding: 20px 20px;
   display: flex;
-  column-gap: 40px;
   position: relative;
 
   @media screen and (max-width: 1000px) {
@@ -37,6 +36,10 @@
   max-width: 390px;
   position: relative;
 
+  &:not(:last-child) {
+   margin-right: 40px;
+  }
+
   @media screen and (max-width: 1000px) {
    display: none;
   }
@@ -63,7 +66,6 @@
  }
 
  &__link {
-  column-gap: 10px;
   display: flex;
   align-items: center;
   position: absolute;
@@ -71,11 +73,17 @@
   font-size: 18px;
   font-weight: 600;
   width: 100%;
-  transition: all .2s;
+
+  img {
+   margin-left: 10px;
+   transition: all .2s;
+  }
  }
 
  &__link:hover {
-  column-gap: 15px;
+  img {
+   margin-left: 15px;
+  }
  }
 
  &__link::before {

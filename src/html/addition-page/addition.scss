@@ -6,12 +6,20 @@
 
  &__box {
   display: flex;
-  column-gap: 40px;
   margin-bottom: 110px;
+ }
+
+ &-content {
+  margin-left: 40px;
  }
 
  &__box.reverse {
   flex-direction: row-reverse;
+
+  .addition-content {
+   margin-left: 0;
+   margin-right: 40px;
+  }
  }
 
  &__title {

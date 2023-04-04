@@ -19,12 +19,12 @@
   display: grid;
   grid-template-columns: 505px 470px;
   justify-content: space-between;
-  row-gap: 40px;
  }
 
  &__box {
   position: relative;
   padding-left: 20px;
+  margin-bottom: 40px;
  }
 
  &__box::before {

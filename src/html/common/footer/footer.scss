@@ -6,7 +6,6 @@
     position: relative;
     display: flex;
     padding: 45px 12px;
-    column-gap: 135px;
   }
 
   .wrapper::before {
@@ -21,6 +20,7 @@
   &__nav {
     max-width: 870px;
     flex: 1;
+    margin-right: 135px;
   }
 
   &__title {
@@ -37,7 +37,6 @@
 
   &__designs-box {
     display: flex;
-    column-gap: 30px;
 
     a {
       max-width: 300px;
@@ -63,6 +62,10 @@
       font-weight: 600;
       margin-bottom: 18px;
     }
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 
   &__designs-block:nth-child(3) {
@@ -71,7 +74,6 @@
 
   &__nav-bottom {
     display: flex;
-    column-gap: 30px;
     margin-top: 25px;
   }
 
@@ -79,21 +81,28 @@
   &__contacts-item {
     display: flex;
     align-items: center;
-    column-gap: 15px;
     padding-bottom: 20px;
     font-size: 16px;
     letter-spacing: 0.06em;
+
+    img {
+      margin-right: 15px;
+    }
   }
 
   &__contacts-secondary {
     display: flex;
-    column-gap: 40px;
     margin-top: 20px;
+
+    a:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 
   &__projects {
     max-width: 310px;
     flex: 1;
+    margin-right: 30px;
 
     a {
       margin-bottom: 10px;
@@ -113,6 +122,7 @@
   &__gallery {
     max-width: 310px;
     flex: 1;
+    margin-right: 30px;
 
     a {
       margin-bottom: 10px;
@@ -156,12 +166,19 @@
     font-size: 16px;
     color: white;
     margin-top: 30px;
-    column-gap: 30px;
 
     a {
       display: flex;
       align-items: center;
-      column-gap: 10px;
+      margin-right: 30px;
+
+      img {
+        margin-left: 10px;
+      }
+    }
+
+    span:not(:last-child) {
+      margin-right: 30px;
     }
   }
 
@@ -172,7 +189,7 @@
       margin-left: 5px;
     }
 
-    a:hover{
+    a:hover {
       color: $color-blue;
     }
   }
@@ -182,7 +199,6 @@
   .footer {
     .wrapper {
       flex-direction: column;
-      row-gap: 50px;
     }
 
     .wrapper::before {
@@ -221,6 +237,7 @@
     }
 
     &__contacts {
+      margin-top: 50px;
       padding-bottom: 60px;
     }
   }
@@ -229,7 +246,6 @@
 @media screen and (max-width: 768px) {
   .footer {
     .wrapper {
-      row-gap: 15px;
       padding: 25px 15px;
     }
 
@@ -268,11 +284,13 @@
 
     &__contacts {
       position: relative;
-      padding-bottom: 80px;
+      padding-bottom: 90px;
+      margin-top: 30px;
 
       img {
         display: none;
       }
+
     }
 
     &__contacts::before {
@@ -281,7 +299,7 @@
       width: 80%;
       height: 2px;
       background-color: rgba(255, 255, 255, 0.45);
-      bottom: 75px;
+      bottom: 85px;
     }
 
     &__contacts-item {
@@ -296,13 +314,18 @@
 
     &__politics {
       flex-direction: column;
-      row-gap: 10px;
       font-size: 13px;
 
       a {
+        margin-bottom: 10px;
+
         img {
           width: 7px;
         }
+      }
+
+      span:not(:last-child) {
+        margin-bottom: 10px;
       }
     }
   }

@@ -22,7 +22,7 @@
   position: relative;
   z-index: 2;
   height: fit-content;
-
+  margin-right: 60px;
   img {
    display: block;
   }
@@ -38,7 +38,6 @@
 
  &__info {
   display: flex;
-  column-gap: 60px;
   min-height: 520px;
   position: relative;
   top: 40px;
@@ -215,8 +214,8 @@
   }
 
   &__decor {
-   min-height: 306px;
-   top: 55px;
+   min-height: 230px;
+   top: 63px;
   }
 
   &__quote-text {

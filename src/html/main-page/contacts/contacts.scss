@@ -2,7 +2,7 @@
  position: relative;
  min-height: 700px;
 
- &.why{
+ &.why {
   min-height: 520px;
  }
 
@@ -39,15 +39,18 @@
  &__inner-box {
   padding-top: 40px;
   display: grid;
-  grid-template-columns: 200px 160px 260px;
-  column-gap: 40px;
-  row-gap: 40px;
+  grid-template-columns: 240px 200px 260px;
+  grid-template-rows: 40px 120px;
  }
 
  &__item {
   display: flex;
   align-items: center;
-  column-gap: 10px;
+
+  img {
+   margin-right: 10px;
+  }
+
  }
 
  &__feedback-block {
@@ -132,7 +135,11 @@
 
   &__inner-box {
    grid-template-columns: 260px;
-   row-gap: 10px;
+   grid-template-rows: none;
+  }
+
+  &__item:not(:last-child) {
+   margin-bottom: 10px;
   }
 
   &__feedback-block {

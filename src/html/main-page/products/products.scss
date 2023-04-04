@@ -42,7 +42,9 @@
       }
 
       .slide-link {
-        column-gap: 20px;
+        img {
+          margin-left: 20px;
+        }
       }
     }
 
@@ -83,13 +85,16 @@
     }
 
     .slide-link {
-      transition: all .3s;
       color: black;
       display: flex;
       align-items: center;
-      column-gap: 10px;
       position: absolute;
       bottom: 10px;
+
+      img {
+        transition: all .3s;
+        margin-left: 10px;
+      }
     }
   }
 }
@@ -155,9 +160,6 @@
           }
         }
 
-        .slide-link {
-          column-gap: 0;
-        }
       }
 
       .slide-title {
