@@ -1592,10 +1592,10 @@ a {
 .footer .wrapper::before {
   content: "";
   position: absolute;
-  height: calc(100% - 90px);
+  height: calc(100% - 80px);
   width: 1px;
   background-color: white;
-  right: 360px;
+  right: 330px;
 }
 
 .footer__nav {
@@ -1607,8 +1607,8 @@ a {
 .footer__title {
   font-size: 18px;
   font-weight: 700;
-  letter-spacing: 0.035em;
-  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+  margin-bottom: 28px;
   text-transform: uppercase;
 }
 
@@ -1623,7 +1623,7 @@ a {
 .footer__designs-box a {
   max-width: 300px;
   margin-bottom: 10px;
-  line-height: 24px;
+  line-height: 19px;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1636,7 +1636,7 @@ a {
 }
 
 .footer__designs-block {
-  max-width: 310px;
+  max-width: 320px;
   flex: 1;
 }
 
@@ -1650,12 +1650,12 @@ a {
 }
 
 .footer__designs-block:nth-child(3) {
-  max-width: 180px;
+  max-width: 160px;
 }
 
 .footer__nav-bottom {
   display: flex;
-  margin-top: 25px;
+  margin-top: 18px;
 }
 
 .footer__contacts-item {
@@ -1680,14 +1680,14 @@ a {
 }
 
 .footer__projects {
-  max-width: 310px;
+  max-width: 320px;
   flex: 1;
-  margin-right: 30px;
+  margin-right: 26px;
 }
 
 .footer__projects a {
   margin-bottom: 10px;
-  line-height: 24px;
+  line-height: 20px;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1697,17 +1697,18 @@ a {
 
 .footer__projects a:first-child {
   color: white;
+  margin-bottom: 20px;
 }
 
 .footer__gallery {
-  max-width: 310px;
+  max-width: 320px;
   flex: 1;
-  margin-right: 30px;
+  margin-right: 26px;
 }
 
 .footer__gallery a {
   margin-bottom: 10px;
-  line-height: 24px;
+  line-height: 20px;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1717,12 +1718,13 @@ a {
 
 .footer__gallery a:first-child {
   color: white;
+  margin-bottom: 20px;
 }
 
 .footer__a-tent a {
   max-width: 300px;
   margin-bottom: 10px;
-  line-height: 24px;
+  line-height: 20px;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1732,18 +1734,20 @@ a {
 
 .footer__a-tent a:first-child {
   color: white;
+  margin-bottom: 20px;
 }
 
 .footer__solutions {
-  margin-top: 45px;
+  font-size: 15px;
+  margin-top: 33px;
   color: white !important;
 }
 
 .footer__politics {
   display: flex;
-  font-size: 16px;
+  font-size: 14px;
   color: white;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .footer__politics a {
@@ -1758,6 +1762,15 @@ a {
 
 .footer__politics span:not(:last-child) {
   margin-right: 30px;
+}
+
+.footer__contacts {
+  position: relative;
+}
+
+.footer__contacts-secondary {
+  position: absolute;
+  bottom: 0;
 }
 
 .footer .developer {
@@ -4344,6 +4357,7 @@ a {
   .footer__politics {
     position: absolute;
     bottom: 25px;
+    font-size: 14px;
   }
 
   .footer__contacts {
