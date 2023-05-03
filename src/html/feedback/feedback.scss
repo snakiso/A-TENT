@@ -1,0 +1,94 @@
+ .feedback {
+  position: relative;
+  height: fit-content;
+  min-height: 205px;
+  max-width: 430px;
+  flex: 1;
+  top: 15px;
+  border: 1px solid #BEBEBE;
+  border-radius: 0px 48px 0px 0px;
+  background: white;
+
+  &__text {
+   position: relative;
+   padding: 0px 0 65px 16px;
+   margin-bottom: 40px;
+   line-height: 20px;
+  }
+
+  &__text:before {
+   position: absolute;
+   content: '';
+   top: -20px;
+   width: 85%;
+   height: 1px;
+   background: rgba(40, 55, 85, 0.6);
+  }
+
+  &__question {
+   font-size: 18px;
+   font-weight: 500;
+   max-width: 360px;
+   padding: 25px 16px;
+  }
+
+  &__link {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   display: flex;
+   font-weight: 600;
+   font-size: 18px;
+   align-items: center;
+   background-color: $color-blue;
+   height: 50px;
+   padding-left: 130px;
+  }
+
+  &__link::before {
+   position: absolute;
+   content: '';
+   width: 9px;
+   height: 9px;
+   border-bottom: 2px solid white;
+   border-right: 2px solid white;
+   transform: rotate(-45deg);
+   right: 145px;
+   opacity: 0;
+   top: 21px;
+   transition: all .4s;
+  }
+
+  &__link:hover:before {
+   opacity: 1;
+   right: 125px;
+  }
+
+  @media screen and (max-width: 1200px) {
+   &__link {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+   }
+  }
+
+  @media screen and (max-width: 768px) {
+   max-width: calc(100% - 30px);
+   margin: auto;
+  }
+
+  @media screen and (max-width: 500px) {
+   &__text {
+    font-size: 14px;
+    line-height: 16px;
+   }
+
+   &__question {
+    font-size: 16px;
+   }
+
+   &__link {
+    font-size: 14px;
+   }
+  }
+ }

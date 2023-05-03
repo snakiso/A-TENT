@@ -6,16 +6,17 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap&_v=20230404130137" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap&_v=20230404130137" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap&_v=20230404130137" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap&_v=20230404130137" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap&_v=20230503153416" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap&_v=20230503153416" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap&_v=20230503153416" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap&_v=20230503153416" rel="stylesheet">
  <link rel="shortcut icon" href="img/main/favicon-32x32.png" type="image/x-icon">
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230404130137" />
- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230404130137"></script>
- <script src="js/jQuery2.2.0.js?_v=20230404130137"></script>
- <script src="js/ScrollAnimations.js?_v=20230404130137"></script>
- <link rel="stylesheet" href="css/style.min.css?_v=20230404130137">
+ <link rel="stylesheet" href="./files/sticky-sidebar-min.css?_v=20230503153416">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230503153416" />
+ <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230503153416"></script>
+ <script src="js/jQuery2.2.0.js?_v=20230503153416"></script>
+ <script src="js/ScrollAnimations.js?_v=20230503153416"></script>
+ <link rel="stylesheet" href="css/style.min.css?_v=20230503153416">
  <title>Конструкции</title>
 </head>
 
@@ -238,12 +239,12 @@
         мероприятий, коммерческого,
         общественного и часного использования</p>
     </div>
-    <div class="description__feedback">
-      <span class="description__feedback-question">Заинтересовали наши решения?</span>
-      <p>Не стесняйтесь обращаться к нам за дополнительной информацией об аренде наших конструкций и дополнительного
-        оборудования</p>
-      <a href="#" class="description__feedback-link">Связаться с нами</a>
-    </div>
+    <div class="feedback">
+   <span class="feedback__question">Заинтересовали наши премиальные павильоны?</span>
+   <p class="feedback__text">Не стесняйтесь обращаться к нам за дополнительной информацией об аренде наших конструкций и дополнительного
+    оборудования</p>
+   <a href="#" class="feedback__link">Связаться с нами</a>
+</div>
   </div>
 </div>
     </section>
@@ -257,10 +258,10 @@
     <img src="img/cards/photo.png" alt="">
    </div>
    <div class="card__content">
-    <h3 class="card__title">Премиальные павильоны</h3>
+    <h3 class="card__title">Премиальные РЕШЕНИЯ</h3>
     <p class="card__text"> Мы являемся лидирующей компанией по предоставлению в аренду премиальных
      павильонов серии MANHATTAN в России</p>
-    <span class="card__link">Премиальные решения</span>
+    <span class="card__link">Наши премиальные павильоны</span>
    </div>
   </a>
   <a href="#" class="card card-up" data-animation-container data-animation-delay=".2s">
@@ -268,12 +269,12 @@
     <img src="img/cards/photo-1.png" alt="">
    </div>
    <div class="card__content">
-    <h3 class="card__title">КЛАССИЧЕСКИЕ конструкции</h3>
+    <h3 class="card__title">классические решения</h3>
     <p class="card__text">Большой и современный парк аренды быстровозводимых временных конструкций шириной от 3м
      до 40м
      позволяет создать
      пространство для проведения любого Event мероприятия</p>
-    <span class="card__link">Классические решения</span>
+    <span class="card__link">Наши классические конструкциия</span>
    </div>
   </a>
   <a href="#" class="card card-up" data-animation-container data-animation-delay=".4s">
@@ -287,12 +288,19 @@
      до 40м
      позволяет создать
      пространство для проведения любого Event мероприятия. </p>
-    <span class="card__link">Дополнительные решения</span>
+    <span class="card__link">Наше дополнительное оборудование</span>
    </div>
   </a>
  </div>
 </div>
     </section>
+    <div class="path">
+ <div class="wrapper">
+  <a href="#" class="path__link"><img src="img/path/home.svg" alt=""></a>
+  <a href="#" class="path__link">Конструкции и дополнительное оборудование</a>
+  <a href="#" class="path__link">Первоклассные тентовые конструкции для удовлетворения любых ваших потребностей</a>
+ </div>
+</div>
   </main>
   <footer class="footer">
  <div class="wrapper">
@@ -363,7 +371,7 @@
 </footer>
 </body>
 
-<script src="./js/menu.js?_v=20230404130137"></script>
-<script src="./js/animation.js?_v=20230404130137"></script>
+<script src="./js/menu.js?_v=20230503153416"></script>
+<script src="./js/animation.js?_v=20230503153416"></script>
 
 </html>

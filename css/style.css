@@ -1805,6 +1805,7 @@ a {
   font-weight: 500;
   max-width: 660px;
   line-height: 24px;
+  margin-bottom: 0;
 }
 
 .description__feedback {
@@ -1813,8 +1814,9 @@ a {
   height: -moz-fit-content;
   height: fit-content;
   min-height: 205px;
-  max-width: 420px;
+  max-width: 430px;
   flex: 1;
+  top: 15px;
   border: 1px solid #BEBEBE;
   border-radius: 0px 48px 0px 0px;
   background: white;
@@ -1822,7 +1824,7 @@ a {
 
 .description__feedback p {
   position: relative;
-  padding: 0px 0 25px 16px;
+  padding: 0px 0 65px 16px;
   margin-bottom: 40px;
   line-height: 20px;
 }
@@ -1837,10 +1839,10 @@ a {
 }
 
 .description__feedback-question {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   max-width: 360px;
-  padding: 16px 16px;
+  padding: 25px 16px;
 }
 
 .description__feedback-link {
@@ -1853,7 +1855,7 @@ a {
   align-items: center;
   background-color: #20C2FF;
   height: 50px;
-  padding-left: 110px;
+  padding-left: 130px;
 }
 
 .description__feedback-link::before {
@@ -1872,7 +1874,7 @@ a {
 
 .description__feedback-link:hover:before {
   opacity: 1;
-  right: 135px;
+  right: 125px;
 }
 
 .description__img {
@@ -1891,8 +1893,9 @@ a {
 
 .cards__title {
   font-size: 40px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin-top: 12px;
+  letter-spacing: 0.035em;
 }
 
 .card {
@@ -1901,7 +1904,15 @@ a {
   flex-direction: column;
   border: 1px solid #BEBEBE;
   flex-basis: 33%;
-  margin: 0.75em;
+  margin: 0.9em;
+}
+
+.card:first-child {
+  margin-left: 0;
+}
+
+.card:last-child {
+  margin-right: 0;
 }
 
 .card__img {
@@ -1933,6 +1944,8 @@ a {
   font-size: 22px;
   color: rgb(8, 26, 61);
   margin-bottom: 20px;
+  font-family: "Play", sans-serif;
+  letter-spacing: 0.035em;
 }
 
 .card__text {
@@ -1947,7 +1960,7 @@ a {
 .card__link {
   position: absolute;
   bottom: 20px;
-  font-size: 18px;
+  font-size: 16px;
   color: rgb(8, 26, 61);
   font-weight: 500;
 }
@@ -2027,6 +2040,105 @@ a {
   font-size: 32px;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.feedback {
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 205px;
+  max-width: 430px;
+  flex: 1;
+  top: 15px;
+  border: 1px solid #BEBEBE;
+  border-radius: 0px 48px 0px 0px;
+  background: white;
+}
+
+.feedback__text {
+  position: relative;
+  padding: 0px 0 65px 16px;
+  margin-bottom: 40px;
+  line-height: 20px;
+}
+
+.feedback__text:before {
+  position: absolute;
+  content: "";
+  top: -20px;
+  width: 85%;
+  height: 1px;
+  background: rgba(40, 55, 85, 0.6);
+}
+
+.feedback__question {
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 360px;
+  padding: 25px 16px;
+}
+
+.feedback__link {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  font-weight: 600;
+  font-size: 18px;
+  align-items: center;
+  background-color: #20C2FF;
+  height: 50px;
+  padding-left: 130px;
+}
+
+.feedback__link::before {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(-45deg);
+  right: 145px;
+  opacity: 0;
+  top: 21px;
+  transition: all 0.4s;
+}
+
+.feedback__link:hover:before {
+  opacity: 1;
+  right: 125px;
+}
+
+.path .wrapper {
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.path__link {
+  position: relative;
+  color: #081A3D;
+}
+
+.path__link:not(:last-child) {
+  margin-right: 45px;
+}
+
+.path__link:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 18px;
+  background: url(../img/path/arrow.svg);
+  right: -28px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.path__link:last-child {
+  color: #BEBEBE;
 }
 
 .slider__link {
@@ -2638,11 +2750,16 @@ a {
   background-repeat: no-repeat;
   background-position: bottom center;
   position: relative;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.error-page__logo {
+  padding: 80px 0;
 }
 
 .error-page__circle {
   position: relative;
-  top: -120px;
   margin: auto;
   width: 980px;
   height: 980px;
@@ -2653,9 +2770,9 @@ a {
 
 .error-page__content {
   position: absolute;
-  top: 50%;
+  top: 43%;
   left: 0;
-  transform: translate(18%, -44%);
+  transform: translate(30%, -44%);
   color: #081A3D;
   max-width: 740px;
   display: flex;
@@ -2668,12 +2785,14 @@ a {
   font-family: "Play", sans-serif;
   font-weight: 700;
   letter-spacing: 0.005em;
+  line-height: 110%;
 }
 
 .error-page__subtitle {
   font-size: 36px;
   font-weight: 600;
   letter-spacing: 0.04em;
+  margin-bottom: 190px;
 }
 
 .error-page__text {
@@ -2684,7 +2803,7 @@ a {
 
 .error-page__link {
   position: relative;
-  margin-top: 60px;
+  margin-top: 25px;
   background-color: #20C2FF;
   padding: 16px 28px;
   border-radius: 40px;
@@ -3992,6 +4111,12 @@ a {
     justify-content: center;
   }
 
+  .feedback__link {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
   .advice .wrapper {
     padding: 0;
   }
@@ -5161,6 +5286,11 @@ a {
     display: none;
   }
 
+  .feedback {
+    max-width: calc(100% - 30px);
+    margin: auto;
+  }
+
   .slider .project-slider .swiper-slide {
     border: 1px solid #D7D7D7;
   }
@@ -5415,6 +5545,11 @@ a {
     border-right: none;
   }
 
+  .error-page__logo {
+    width: 120px;
+    padding: 50px 0 120px 0;
+  }
+
   .error-page__circle {
     background: none;
     box-shadow: none;
@@ -5428,9 +5563,9 @@ a {
   }
 
   .error-page__content {
-    padding: 40px 0 100px 0;
+    padding: 5px 0 100px 0;
     color: #081A3D;
-    max-width: 290px;
+    max-width: 330px;
     position: relative;
     transform: none;
     top: 0;
@@ -5438,11 +5573,14 @@ a {
 
   .error-page__title {
     font-size: 100px;
+    line-height: 115%;
   }
 
   .error-page__subtitle {
     font-size: 20px;
     text-align: center;
+    letter-spacing: 0;
+    margin-bottom: 115px;
   }
 
   .error-page__text {
@@ -5452,7 +5590,15 @@ a {
 
   .error-page__link {
     font-size: 14px;
-    margin-top: 45px;
+    margin-top: 20px;
+  }
+
+  .error-page__link::after {
+    display: none;
+  }
+
+  .error-page__link:hover {
+    padding: 12px 20px;
   }
 
   .spheres-hero {
@@ -5810,6 +5956,19 @@ a {
   }
 
   .description__feedback-link {
+    font-size: 14px;
+  }
+
+  .feedback__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .feedback__question {
+    font-size: 16px;
+  }
+
+  .feedback__link {
     font-size: 14px;
   }
 

@@ -2,8 +2,10 @@ let adviceBox = document.querySelectorAll('.advice__box');
 let adviceLink = document.querySelectorAll('.advice__link');
 let adviceLinkBox = document.querySelector('.advice__nav-inner-box');
 let aside = document.querySelector('.advice__nav');
+let windowHeight = window.screen.height
+console.log(windowHeight)
 
-let koef = 75*4.5
+let koef = 75 * 4.4
 let sumOfHeight = adviceBox[adviceBox.length - 1].offsetHeight + adviceBox[adviceBox.length - 2].offsetHeight + adviceBox[adviceBox.length - 3].offsetHeight + koef
 let checkPoint = aside.offsetHeight - sumOfHeight
 

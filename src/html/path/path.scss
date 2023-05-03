@@ -1,0 +1,32 @@
+.path {
+ .wrapper {
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+ }
+
+ &__link{
+  position: relative;
+  color: #081A3D;
+
+
+  &:not(:last-child){
+   margin-right: 45px;
+
+   &::after{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 18px;
+    background: url(../img/path/arrow.svg);
+    right: -28px;
+    top: 50%;
+    transform: translateY(-50%);
+   }
+  }
+
+  &:last-child{
+   color: #BEBEBE;
+  }
+ }
+}

@@ -3,10 +3,15 @@
  background-repeat: no-repeat;
  background-position: bottom center;
  position: relative;
+ text-align: center;
+ min-height: 100vh;
+
+ &__logo {
+  padding: 80px 0;
+ }
 
  &__circle {
   position: relative;
-  top: -120px;
   margin: auto;
   width: 980px;
   height: 980px;
@@ -17,9 +22,9 @@
 
  &__content {
   position: absolute;
-  top: 50%;
+  top: 43%;
   left: 0;
-  transform: translate(18%, -44%);
+  transform: translate(30%, -44%);
   color: #081A3D;
   max-width: 740px;
   display: flex;
@@ -32,12 +37,14 @@
   font-family: 'Play', sans-serif;
   font-weight: 700;
   letter-spacing: 0.005em;
+  line-height: 110%;
  }
 
  &__subtitle {
   font-size: 36px;
   font-weight: 600;
   letter-spacing: 0.04em;
+  margin-bottom: 190px;
  }
 
  &__text {
@@ -48,7 +55,7 @@
 
  &__link {
   position: relative;
-  margin-top: 60px;
+  margin-top: 25px;
   background-color: $color-blue;
   padding: 16px 28px;
   border-radius: 40px;
@@ -107,6 +114,11 @@
 
  @media screen and (max-width: 768px) {
 
+  &__logo{
+   width: 120px;
+   padding: 50px 0 120px 0;
+  }
+
   &__circle {
    background: none;
    box-shadow: none;
@@ -116,9 +128,9 @@
   }
 
   &__content {
-   padding: 40px 0 100px 0;
+   padding: 5px 0 100px 0;
    color: #081A3D;
-   max-width: 290px;
+   max-width: 330px;
    position: relative;
    transform: none;
    top: 0;
@@ -126,11 +138,14 @@
 
   &__title {
    font-size: 100px;
+   line-height: 115%;
   }
 
   &__subtitle {
    font-size: 20px;
    text-align: center;
+   letter-spacing: 0;
+   margin-bottom: 115px;
   }
 
   &__text {
@@ -140,7 +155,16 @@
 
   &__link {
    font-size: 14px;
-   margin-top: 45px;
+   margin-top: 20px;
+   
+
+   &::after{
+    display: none;
+   }
+
+   &:hover{
+    padding: 12px 20px;
+   }
   }
  }
 }
