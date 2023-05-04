@@ -1,0 +1,9 @@
+.description-link {
+ color: $color-blue;
+ font-weight: 500;
+
+ @media screen and (max-width: 768px) {
+  font-size: 14px;
+  padding: 0 15px;
+ }
+}

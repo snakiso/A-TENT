@@ -28,51 +28,6 @@
         height: 100%;
     }
 
-    .project-slider {
-        margin-top: 50px;
-
-        &__bottom {
-            margin-top: 30px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        &__nav {
-            display: flex;
-            column-gap: 50px;
-        }
-
-        &__all-projects {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 600;
-            font-size: 18px;
-            background-color: $color-blue;
-            border-radius: 40px;
-            width: 170px;
-            height: 70px;
-        }
-
-        .slide-title {
-            padding: 15px;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 19px;
-            letter-spacing: 0.03em;
-            max-width: 265px;
-        }
-
-        @media screen and (max-width: 768px) {
-            .swiper-slide {
-                border: 1px solid #D7D7D7;
-            }
-
-            img {
-                border-bottom: 5px solid $color-blue;
-            }
-        }
-    }
 
     .swiper-button-disabled {
         opacity: 0.4;
@@ -108,29 +63,6 @@
             font-family: 'Play', sans-serif;
         }
 
-        .project-slider {
-            margin-top: 20px;
-            position: relative;
-        }
-
-        .project-slider::before,
-        .project-slider::after {
-            position: absolute;
-            content: '';
-            width: 10px;
-            height: 20px;
-            left: -13px;
-            top: 33%;
-            background: url(../img/main/mobile-arrow.png);
-            background-repeat: repeat;
-        }
-
-        .project-slider::after {
-            right: -13px;
-            left: auto;
-            transform: rotate(180deg);
-        }
-
         .swiper-slide {
             img {
                 height: 230px;
@@ -140,45 +72,6 @@
     }
 }
 
-.design-slider {
-    position: relative;
-    padding-top: 120px;
-    padding-bottom: 0;
-
-    &__nav {
-        max-width: 860px;
-        width: 100%;
-        position: absolute;
-        display: flex;
-        justify-content: space-between;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 5;
-    }
-
-    .swiper-button-prev,
-    .swiper-button-next {
-        background-color: white;
-    }
-
-    @media screen and (max-width: 768px) {
-        .swiper-slide {
-            flex-shrink: 1;
-
-            img {
-                height: 230px;
-                width: 280px;
-                object-fit: cover;
-            }
-        }
-
-        .swiper-button-prev,
-        .swiper-button-next {
-            display: none;
-        }
-    }
-}
 
 .swiper-slide {
     position: relative;
@@ -249,45 +142,6 @@
     height: 100%;
     background-color: #D7D7D7;
     left: 50%;
-}
-
-.slider-all-projects {
-    position: absolute;
-    top: -10px;
-    left: 87%;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    font-weight: 600;
-    font-size: 16px;
-    background-color: $color-blue;
-    border-radius: 40px;
-    width: 145px;
-    height: 55px;
-    transition: all .3s;
-}
-
-.slider-all-projects::before {
-    position: absolute;
-    position: absolute;
-    content: '';
-    width: 9px;
-    height: 9px;
-    border-bottom: 2px solid white;
-    border-right: 2px solid white;
-    transform: rotate(-45deg);
-    right: 35px;
-    opacity: 0;
-    transition: all .4s;
-}
-
-.slider-all-projects:hover {
-    width: 165px;
-}
-
-.slider-all-projects:hover:before {
-    right: 25px;
-    opacity: 1;
 }
 
 

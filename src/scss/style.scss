@@ -62,21 +62,7 @@ body {
   }
 }
 
-.padding-top {
-  padding-top: $main-padding  !important;
 
-  @media screen and (max-width: 1300px) {
-    padding-top: $main-padding * 0.375 !important;
-  }
-}
-
-.padding-bottom {
-  padding-bottom: $main-padding  !important;
-
-  @media screen and (max-width: 1300px) {
-    padding-bottom: $main-padding * 0.375 !important;
-  }
-}
 
 .wrapper {
   position: relative;
@@ -118,6 +104,8 @@ a {
 
 @import '../html/common/cookies/cookies';
 @import 'animation';
+@import 'paddings';
+@import 'title';
 @import '../html/common/menu/menu';
 @import '../html/common/header/header';
 @import '../html/main-page/hero/hero';
@@ -131,11 +119,15 @@ a {
 @import '../html/main-page/contacts/contacts';
 @import '../html/common/footer/footer';
 @import '../html/description/description';
-@import '../html/cards/cards';
+@import '../html/description/description-link';
+@import '../html/cards/cards-box';
 @import '../html/cards/card';
 @import '../html/feedback/feedback';
 @import '../html/path/path';
 @import '../html/sliders/slider';
+@import '../html/sliders/design-slider';
+@import '../html/sliders/project-slider';
+@import '../html/sliders/slider-all-projects';
 @import '../html/common/interest/interest';
 @import '../html/addition-page/addition';
 @import '../html/shater-page/suitable/suitable';

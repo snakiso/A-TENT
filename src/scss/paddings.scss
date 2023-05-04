@@ -1,0 +1,15 @@
+.padding-top {
+ padding-top: $main-padding  !important;
+
+ @media screen and (max-width: 1300px) {
+  padding-top: $main-padding * 0.375 !important;
+ }
+}
+
+.padding-bottom {
+ padding-bottom: $main-padding  !important;
+
+ @media screen and (max-width: 1300px) {
+  padding-bottom: $main-padding * 0.375 !important;
+ }
+}

@@ -1,0 +1,38 @@
+.title {
+ font-size: 50px;
+ font-weight: 600;
+ margin-top: 12px;
+ margin-bottom: 35px;
+ line-height: 128%;
+
+ &--cards {
+  font-size: 40px;
+  max-width: 1100px;
+  letter-spacing: 0.035em;
+ }
+
+ &--white {
+  color: white;
+  font-size: 40px;
+ }
+
+ &--860w {
+  max-width: 860px;
+ }
+
+ @media screen and (max-width: 1200px) {
+  font-size: 40px;
+ }
+
+ @media screen and (max-width: 768px) {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  padding-left: 15px;
+
+  &--cards {
+   font-size: 22px;
+   letter-spacing: 0.02em;
+   padding: 0 15px;
+  }
+ }
+}

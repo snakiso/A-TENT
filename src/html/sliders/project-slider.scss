@@ -1,0 +1,68 @@
+.project-slider {
+ margin-top: 50px;
+
+ &__bottom {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+ }
+
+ &__nav {
+  display: flex;
+  column-gap: 50px;
+ }
+
+ &__all-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: $color-blue;
+  border-radius: 40px;
+  width: 170px;
+  height: 70px;
+ }
+
+ .slide-title {
+  padding: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  max-width: 265px;
+ }
+
+ @media screen and (max-width: 768px) {
+  margin-top: 20px;
+  position: relative;
+
+  .swiper-slide {
+   border: 1px solid #D7D7D7;
+  }
+
+  &::before,
+  &::after {
+   position: absolute;
+   content: '';
+   width: 10px;
+   height: 20px;
+   left: -13px;
+   top: 33%;
+   background: url(../img/main/mobile-arrow.png);
+   background-repeat: repeat;
+  }
+
+  &::after {
+   right: -13px;
+   left: auto;
+   transform: rotate(180deg);
+  }
+
+  img {
+   height: 230px;
+   object-fit: cover;
+   border-bottom: 5px solid $color-blue;
+  }
+ }
+}
